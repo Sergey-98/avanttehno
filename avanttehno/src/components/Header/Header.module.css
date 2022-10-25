@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  padding: 1em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid #010150; */
+  border-bottom: 8px solid #000000; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* background: rgba(0, 43, 71, 0.48); */
+  background: linear-gradient(180deg, #000000 39.76%, #010130 100%);
+  font-size: 1.3em;
+  z-index: 999;
+}
+.navbar {
+  margin-left: 15em;
+}
+.navbar__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+}
+.navbar__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__logo {
+  width: 6em;
+  height: 6em;
+  margin-left: 5em;
+}
+.header__logo:hover {
+  cursor: pointer;
+}
