@@ -1,5 +1,5 @@
 import Error from '../pages/Page404/Page404';
-import Main from '../pages/MainPage/Main';
+import Main from '../pages/Main/Main';
 // import Contacts from '../pages/Contact/Contacts';
 
 export const routes = [
