@@ -15,7 +15,6 @@ export default function Header() {
           window.scrollTo(0, 0);
         }}
       />
-      {/* <div className={styles.header__logo}></div> */}
       <nav className={styles.navbar}>
         <div className={styles.navbar__links}>
           <NavLink className={styles.navbar__link} to="/">
