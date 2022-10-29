@@ -14,7 +14,7 @@
 .partners_title {
   margin-bottom: 2%;
   font-family: 'Reza';
-  font-size: 30px;
+  font-size: 40px;
 }
 .partners_section__cards {
   width: 90vw;
@@ -24,4 +24,17 @@
   align-items: center;
   gap: 3%;
   overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: inherit inherit;
+}
+.partners_section__cards::-webkit-scrollbar {
+  width: 5px;
+}
+.partners_section__cards::-webkit-scrollbar-track {
+  background: inherit;
+}
+.partners_section__cards::-webkit-scrollbar-thumb {
+  background-color: inherit;
+  border-radius: 20px;
+  border: 3px solid inherit;
 }

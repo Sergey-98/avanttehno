@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../../../assets/main-photo-1.png';
+import photo from '../../../assets/img/main-photo-2.png';
 import styles from './mainPhoto.module.css';
 
 export default function MainPhoto() {

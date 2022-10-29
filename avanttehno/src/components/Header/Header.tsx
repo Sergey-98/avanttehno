@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
 import Button from '../UI/button/Button';
-import logo from '../../assets/logoBlue.jpg';
+import logo from '../../assets/logo.svg';
 
 export default function Header() {
   return (
