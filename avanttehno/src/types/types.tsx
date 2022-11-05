@@ -1,7 +1,9 @@
 export type Props = {
   children?: React.ReactNode;
   placeholder?: React.ReactNode;
+  onClick?: () => void;
 };
+
 export type ContactType = {
   icon?: string;
   title?: string;
@@ -17,7 +19,7 @@ export type AdvantageProps = {
 export type State = {
   isOpenRequisites?: boolean;
   isOpenMenu?: boolean;
-  value?: string;
+  isOpenModal?: boolean;
 };
 
 export type DispatchType = {
@@ -25,8 +27,24 @@ export type DispatchType = {
   payload: State;
 };
 
+export type DispatchFormType = {
+  type?: string;
+  payloadForm: FormParamState;
+};
+
 export type InfoProps = {
   src: string;
   title: string;
   text: string;
+};
+
+export type FormParamState = {
+  name?: string;
+  phoneNumber?: string;
+  email?: string;
+  description?: string;
+  errorName?: string;
+  errorNumber?: string;
+  errorEmail?: string;
+  errorDescription?: string;
 };

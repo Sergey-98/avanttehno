@@ -4,7 +4,11 @@ import { Props } from 'types/types';
 import './Button.module.css';
 
 const Button = (props: Props) => {
-  return <button className={classes.btn}>{props.children}</button>;
+  return (
+    <button onClick={props.onClick} className={classes.btn}>
+      {props.children}
+    </button>
+  );
 };
 
 export default Button;

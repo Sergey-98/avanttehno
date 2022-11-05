@@ -5,19 +5,32 @@ import AppRouter from './components/AppRouter';
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 import { Context } from './Context/Context';
-import { reducer } from 'components/reducer/reducer';
+import { reducer, formReducer } from 'reducer/reducer';
+import Modal from './components/Modal/Modal';
 
 function App() {
-  const initialState = { isOpenRequisites: false, value: '' };
+  const initialState = { isOpenRequisites: false, isOpenModal: false };
+  const initialFormState = {
+    name: '',
+    phoneNumber: '',
+    email: '',
+    description: '',
+    errorName: '',
+    errorNumber: '',
+    errorEmail: '',
+    errorDescription: '',
+  };
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [formState, formDispatch] = useReducer(formReducer, initialFormState);
 
   return (
-    <Context.Provider value={{ state, dispatch }}>
+    <Context.Provider value={{ state, dispatch, formState, formDispatch }}>
       <div className="App">
         <BrowserRouter>
           <Header />
           <AppRouter />
           <Footer />
+          {state.isOpenModal ? <Modal /> : null}
         </BrowserRouter>
       </div>
     </Context.Provider>

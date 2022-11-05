@@ -1,11 +1,25 @@
 import React, { Dispatch } from 'react';
-import { State, DispatchType } from '../types/types';
+import { State, FormParamState, DispatchType, DispatchFormType } from '../types/types';
 
-type Props = {
+type PropsP = {
   state: State;
   dispatch: Dispatch<DispatchType>;
+  formState: FormParamState;
+  formDispatch: Dispatch<DispatchFormType>;
 };
-export const Context = React.createContext<Props>({
-  state: { isOpenRequisites: false },
+
+export const Context = React.createContext<PropsP>({
+  state: { isOpenRequisites: false, isOpenModal: false },
   dispatch: () => {},
+  formState: {
+    name: '',
+    phoneNumber: '',
+    email: '',
+    description: '',
+    errorName: '',
+    errorNumber: '',
+    errorEmail: '',
+    errorDescription: '',
+  },
+  formDispatch: () => {},
 });
