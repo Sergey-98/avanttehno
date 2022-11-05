@@ -24,3 +24,9 @@ export type DispatchType = {
   type?: string;
   payload: State;
 };
+
+export type InfoProps = {
+  src: string;
+  title: string;
+  text: string;
+};

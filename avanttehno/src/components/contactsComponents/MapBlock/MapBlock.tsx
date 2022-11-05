@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Map.module.css';
+import classes from './MapBlock.module.css';
 import { YMaps, Map, Placemark, FullscreenControl } from '@pbe/react-yandex-maps';
 
 export default function MapBlock() {

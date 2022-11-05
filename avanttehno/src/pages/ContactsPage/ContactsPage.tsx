@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import classes from './ContactsPage.module.css';
-import MapBlock from '../../components/contactsComponents/Map/Map';
+import MapBlock from '../../components/contactsComponents/MapBlock/MapBlock';
 import Information from 'components/contactsComponents/Information/Information';
 
 export default function ContactsPage() {
