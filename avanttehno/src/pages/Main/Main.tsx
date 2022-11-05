@@ -2,9 +2,7 @@ import React, { useEffect } from 'react';
 import MainPhoto from 'components/mainComponents/mainPhoto/mainPhoto';
 import AboutCompany from 'components/mainComponents/AboutCompany/aboutCompany';
 import Partners from 'components/mainComponents/partners/partners';
-import Advantages from 'components/advantages/advantages';
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
+import Advantages from 'components/mainComponents/advantages/advantages';
 import classes from './Main.module.css';
 
 export default function Main() {
@@ -13,12 +11,10 @@ export default function Main() {
   });
   return (
     <main className={classes.main__container}>
-      <Header />
       <MainPhoto />
       <AboutCompany />
       <Partners />
       <Advantages />
-      <Footer />
     </main>
   );
 }

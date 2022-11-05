@@ -8,3 +8,19 @@ export type ContactType = {
   text?: string;
   id?: number;
 };
+export type AdvantageProps = {
+  title: string;
+  text: string;
+  icon?: string;
+};
+
+export type State = {
+  isOpenRequisites?: boolean;
+  isOpenMenu?: boolean;
+  value?: string;
+};
+
+export type DispatchType = {
+  type?: string;
+  payload: State;
+};

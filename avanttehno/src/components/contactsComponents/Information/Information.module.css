@@ -1,0 +1,11 @@
+.information__container {
+  margin: 7% auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.information__contact__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}

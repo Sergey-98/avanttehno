@@ -1,0 +1,10 @@
+.map__container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+.map__board {
+  border: 1px solid black;
+}

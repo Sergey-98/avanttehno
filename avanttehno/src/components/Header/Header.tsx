@@ -23,7 +23,7 @@ export default function Header() {
           <NavLink className={styles.navbar__link} to="/about">
             О компании
           </NavLink>
-          <NavLink className={styles.navbar__link} to="/about">
+          <NavLink className={styles.navbar__link} to="/contacts">
             Контакты
           </NavLink>
         </div>
