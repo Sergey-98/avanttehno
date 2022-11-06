@@ -14,11 +14,11 @@ function App() {
     name: '',
     phoneNumber: '',
     email: '',
-    description: '',
+    message: '',
     errorName: '',
     errorNumber: '',
     errorEmail: '',
-    errorDescription: '',
+    errorMessage: '',
   };
   const [state, dispatch] = useReducer(reducer, initialState);
   const [formState, formDispatch] = useReducer(formReducer, initialFormState);

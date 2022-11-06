@@ -34,8 +34,8 @@ export function formReducer(state: FormParamState, action: DispatchFormType) {
       return {
         ...state,
       };
-    case 'description':
-      state.description = action.payloadForm.description;
+    case 'message':
+      state.message = action.payloadForm.message;
       return {
         ...state,
       };
@@ -54,7 +54,7 @@ export function formReducer(state: FormParamState, action: DispatchFormType) {
       return {
         ...state,
       };
-    case 'errorDescription':
+    case 'errorMessage':
       // state.isOpenRequisites = action.payload.isOpenRequisites;
       return {
         ...state,

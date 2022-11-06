@@ -6,6 +6,11 @@ import Button from 'components/UI/button/Button';
 export default function Modal() {
   const { formState, formDispatch, state, dispatch } = useContext(Context);
 
+  const sendEmail = (event: React.FormEvent) => {
+    event.preventDefault();
+    console.log(event);
+  };
+
   const inputText = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (formDispatch) {
       formDispatch({ type: 'name', payloadForm: { name: event.target.value } });
@@ -21,9 +26,9 @@ export default function Modal() {
       formDispatch({ type: 'email', payloadForm: { email: event.target.value } });
     }
   };
-  const inputDescription = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const inputMessage = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (formDispatch) {
-      formDispatch({ type: 'description', payloadForm: { description: event.target.value } });
+      formDispatch({ type: 'message', payloadForm: { message: event.target.value } });
     }
   };
   const changeModal = () => {
@@ -43,11 +48,12 @@ export default function Modal() {
       <span className={styles.modal_close}>
         <Button onClick={changeModal}>Закрыть</Button>
       </span>
-      <form className={styles.modal_container__form}>
+      <form className={styles.modal_container__form} onSubmit={sendEmail}>
         <label>
           <input
             className={styles.input__text}
             value={formState.name}
+            name="user_name"
             placeholder={'Имя'}
             autoComplete="nope"
             type={'text'}
@@ -72,6 +78,7 @@ export default function Modal() {
           <input
             className={styles.input__text}
             value={formState.email}
+            name="user_email"
             placeholder={'e-mail'}
             autoComplete="off"
             type={'email'}
@@ -84,14 +91,15 @@ export default function Modal() {
         <label>
           <input
             className={styles.input__text}
-            value={formState.description}
+            value={formState.message}
+            name="user_message"
             placeholder={'Ваше сообщение'}
             autoComplete="nope"
             type={'text'}
-            onChange={inputDescription}
+            onChange={inputMessage}
           />
-          <span className={formState.errorDescription ? 'error-text' : 'none'}>
-            {formState.errorDescription}
+          <span className={formState.errorMessage ? 'error-text' : 'none'}>
+            {formState.errorMessage}
           </span>
         </label>
         <input className={styles.input__submit} value={'Submit'} type={'submit'} />

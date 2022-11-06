@@ -42,9 +42,9 @@ export type FormParamState = {
   name?: string;
   phoneNumber?: string;
   email?: string;
-  description?: string;
+  message?: string;
   errorName?: string;
   errorNumber?: string;
   errorEmail?: string;
-  errorDescription?: string;
+  errorMessage?: string;
 };

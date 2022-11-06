@@ -15,11 +15,11 @@ export const Context = React.createContext<PropsP>({
     name: '',
     phoneNumber: '',
     email: '',
-    description: '',
+    message: '',
     errorName: '',
     errorNumber: '',
     errorEmail: '',
-    errorDescription: '',
+    errorMessage: '',
   },
   formDispatch: () => {},
 });
