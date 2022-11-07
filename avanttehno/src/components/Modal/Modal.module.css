@@ -12,35 +12,65 @@
   z-index: 555;
 }
 .modal_container__form {
-  width: 50vw;
-  height: 50vh;
+  width: 55vw;
+  height: 55vh;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  background-color: white;
+  background-color: #fdfafa;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .modal_close {
-  width: 50px;
+  width: 50px; 
   height: 50px;
+  /* width: 5vw;
+  height: 5vh; */
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 35%;
-  left: 35%;
+  bottom: 45%;
+  left: 40%;
   margin: auto;
   z-index: 557;
 }
 
 .modal_close:hover {
   cursor: pointer;
+}
+.input__text {
+  width: 28vw;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.input__submit {
+  margin-top: 3%;
+  cursor: pointer;
+  width: 30%;
+  align-self: center;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #000080;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 20px;
+  color: #4682B4;
+}
+.input__submit:hover {
+  width: 25%;
+  font-size: 25px;
+  background: #000080;
 }

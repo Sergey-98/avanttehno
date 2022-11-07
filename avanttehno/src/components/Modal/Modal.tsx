@@ -102,7 +102,7 @@ export default function Modal() {
             {formState.errorMessage}
           </span>
         </label>
-        <input className={styles.input__submit} value={'Submit'} type={'submit'} />
+        <input className={styles.input__submit} value={'Отправить'} type={'submit'} />
       </form>
     </section>
   );
