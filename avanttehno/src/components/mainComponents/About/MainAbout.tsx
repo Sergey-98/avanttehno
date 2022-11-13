@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './aboutCompany.module.css';
+import styles from './MainAbout.module.css';
 import factory from '../../../assets/img/JAC_company.jpeg';
 
-export default function AboutCompany() {
+export default function MainAbout() {
   return (
     <section className={styles.about__company_section}>
       <div className={styles.about__title}>

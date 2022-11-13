@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import MainPhoto from 'components/mainComponents/mainPhoto/mainPhoto';
-import AboutCompany from 'components/mainComponents/AboutCompany/aboutCompany';
+import MainAbout from 'components/mainComponents/About/MainAbout';
 import Partners from 'components/mainComponents/partners/partners';
 import Advantages from 'components/mainComponents/advantages/advantages';
 import classes from './Main.module.css';
@@ -12,7 +12,7 @@ export default function Main() {
   return (
     <main className={classes.main__container}>
       <MainPhoto />
-      <AboutCompany />
+      <MainAbout />
       <Partners />
       <Advantages />
     </main>

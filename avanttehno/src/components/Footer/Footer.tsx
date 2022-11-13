@@ -11,7 +11,7 @@ export default function Footer() {
   const titles = ['Avant Техно', 'Mail', 'Call', 'Location'];
   const texts = [
     'Качество на долгие годы',
-    'avanttehno@avanttehno.ru',
+    'avanttehno@yandex.ru',
     '(8452)42-00-11, 55-67-15',
     'г.Саратов, ул.Бирюзова 22',
   ];

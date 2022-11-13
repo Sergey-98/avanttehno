@@ -3,7 +3,7 @@ import classes from './MapBlock.module.css';
 import { YMaps, Map, Placemark, FullscreenControl } from '@pbe/react-yandex-maps';
 
 export default function MapBlock() {
-  const coordinates = [51.569192, 46.032433];
+  const coordinates = [51.569315, 46.031589];
   return (
     <div className={classes.map__container}>
       <h1 className={classes.map__title}>Схема проезда</h1>

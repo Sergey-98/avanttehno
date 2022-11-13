@@ -27,9 +27,9 @@ export default function Information() {
   ];
   const infoTexts = [
     '410010, г. Саратов, ул.Бирюзова 22',
-    'пн-пт с 9.00 до 18.00. Cб, вс выходной',
+    'пн-пт с 9.00 до 17.00. Сб, вс выходной',
     '(8452) 42-00-11, 55-67-15',
-    'avanttehno@avanttehno.ru',
+    'avanttehno@yandex.ru',
   ];
 
   return (
