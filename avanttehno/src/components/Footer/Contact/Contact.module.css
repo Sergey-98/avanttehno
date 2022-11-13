@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   padding: 0 5%;
 }
 .contact__last_container {
@@ -13,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   padding: 0 5%;
 }
 .contact__img {

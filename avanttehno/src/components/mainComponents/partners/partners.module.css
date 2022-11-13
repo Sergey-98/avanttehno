@@ -17,24 +17,24 @@
   font-size: 40px;
 }
 .partners_section__cards {
-  width: 90vw;
+  width: 97vw;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3%;
+  gap: 2%;
   overflow: auto;
   scrollbar-width: thin;
-  scrollbar-color: inherit inherit;
+  scrollbar-color: rgba(75, 78, 255, 0);
 }
 .partners_section__cards::-webkit-scrollbar {
   width: 5px;
 }
 .partners_section__cards::-webkit-scrollbar-track {
-  background: inherit;
+  background: rgba(75, 78, 255, 0);
 }
 .partners_section__cards::-webkit-scrollbar-thumb {
-  background-color: inherit;
+  background: rgba(75, 78, 255, 0);
   border-radius: 20px;
-  border: 3px solid inherit;
+  border: 3px solid rgba(75, 78, 255, 0);
 }

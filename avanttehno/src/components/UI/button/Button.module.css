@@ -4,7 +4,11 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
+  /* background: #000080; */
   background: #000080;
+  background: -webkit-linear-gradient(bottom, #000080, #540101);
+  background: -moz-linear-gradient(bottom, #000080, #540101);
+  background: linear-gradient(to top, #000080, #540101);
   border: 5px solid #ece6e6;
   cursor: pointer;
 }
