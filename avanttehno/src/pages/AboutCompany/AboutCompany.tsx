@@ -10,9 +10,11 @@ export default function AboutCompany() {
   });
   return (
     <main className={classes.main__about__container}>
-      <About />
+      <div className={classes.main__about_company}>
+        <About />
+        <Director />
+      </div>
       <Features />
-      <Director />
     </main>
   );
 }

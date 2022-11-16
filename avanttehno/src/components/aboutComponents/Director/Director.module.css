@@ -1,11 +1,28 @@
+@font-face {
+  font-family: 'Reza';
+  src: url(../../../assets/fonts/RezaZulmiSerif.ttf);
+}
 .contacts__director {
+  padding: 1%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border: 3px solid #000080;
+  background: white;
+  font-size: 20px;
 }
+
 .director__container {
+  width: 30vw;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2vw;
+  color: black;
+}
+.director__title {
+  color: black;
+  font-family: 'Reza', serif;
 }
 .director__img_wrapper {
   overflow: hidden;
@@ -20,6 +37,7 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  background: white;
 }
 .director__img {
   width: 100%;

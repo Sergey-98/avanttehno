@@ -1,7 +1,4 @@
 .modal_container {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   position: fixed;
   top: 0;
   left: 0;
@@ -27,6 +24,11 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .modal_close {
@@ -38,7 +40,7 @@
   top: 0;
   right: 0;
   bottom: 45%;
-  left: 40%;
+  left: 45%;
   margin: auto;
   z-index: 557;
 }

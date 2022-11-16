@@ -1,14 +1,49 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import styles from './Modal.module.css';
 import { Context } from '../../Context/Context';
-import Button from 'components/UI/button/Button';
+import Close from 'components/UI/button/Close';
+import Swal from 'sweetalert2';
+import emailjs from 'emailjs-com';
 
 export default function Modal() {
   const { formState, formDispatch, state, dispatch } = useContext(Context);
+  const form = useRef<HTMLFormElement>(null);
+
+  // login: avanttehnooleg@yandex.ru
+  // password: aeiaevczrxesxtwb
 
   const sendEmail = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log(event);
+    if (form.current) {
+      emailjs
+        .sendForm('service_ksceqzu', 'template_8d5afbm', form.current, 'a16Nmw3f7CqETrIRS')
+        .then(
+          (result) => {
+            console.log(result.text);
+            Swal.fire('Good job!', 'Ваша заявка успешно отправлена', 'success');
+            resetForm();
+          },
+          (error) => {
+            console.log(error.text);
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Сервис временно недоступен. Попробуйте повторить запрос через несколько минут',
+            });
+          }
+        );
+    }
+  };
+
+  const resetForm = () => {
+    if (formDispatch) {
+      form.current?.reset();
+      formDispatch({ type: 'name', payloadForm: { name: '' } });
+      formDispatch({ type: 'phoneNumber', payloadForm: { phoneNumber: '' } });
+      formDispatch({ type: 'email', payloadForm: { email: '' } });
+      formDispatch({ type: 'message', payloadForm: { message: '' } });
+      dispatch({ type: 'resetModal', payload: { isOpenModal: false } });
+    }
   };
 
   const inputText = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -46,14 +81,14 @@ export default function Modal() {
   return (
     <section className={styles.modal_container}>
       <span className={styles.modal_close}>
-        <Button onClick={changeModal}>Закрыть</Button>
+        <Close onClick={changeModal}></Close>
       </span>
-      <form className={styles.modal_container__form} onSubmit={sendEmail}>
+      <form className={styles.modal_container__form} onSubmit={sendEmail} ref={form}>
         <label>
           <input
             className={styles.input__text}
             value={formState.name}
-            name="user_name"
+            name="name"
             placeholder={'Имя'}
             autoComplete="nope"
             type={'text'}
@@ -64,6 +99,7 @@ export default function Modal() {
         <label>
           <input
             className={styles.input__text}
+            name="phone"
             value={formState.phoneNumber}
             placeholder={'Номер телефона'}
             autoComplete="nope"
@@ -78,7 +114,7 @@ export default function Modal() {
           <input
             className={styles.input__text}
             value={formState.email}
-            name="user_email"
+            name="email"
             placeholder={'e-mail'}
             autoComplete="off"
             type={'email'}
@@ -92,7 +128,7 @@ export default function Modal() {
           <input
             className={styles.input__text}
             value={formState.message}
-            name="user_message"
+            name="message"
             placeholder={'Ваше сообщение'}
             autoComplete="nope"
             type={'text'}

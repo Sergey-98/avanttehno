@@ -1,0 +1,11 @@
+.main__about__container {
+  padding: 5%;
+  background: linear-gradient(to top, #540101, #000080);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main__about_company {
+  display: flex;
+  gap: 30px;
+}
