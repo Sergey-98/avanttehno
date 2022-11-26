@@ -1,4 +1,4 @@
-import React, { Dispatch } from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import { State, FormParamState, DispatchType, DispatchFormType } from '../types/types';
 
 type PropsP = {
@@ -6,6 +6,8 @@ type PropsP = {
   dispatch: Dispatch<DispatchType>;
   formState: FormParamState;
   formDispatch: Dispatch<DispatchFormType>;
+  isBurger: boolean;
+  setIsBurger: Dispatch<SetStateAction<boolean>>;
 };
 
 export const Context = React.createContext<PropsP>({
@@ -22,4 +24,6 @@ export const Context = React.createContext<PropsP>({
     errorMessage: '',
   },
   formDispatch: () => {},
+  isBurger: false,
+  setIsBurger: () => {},
 });

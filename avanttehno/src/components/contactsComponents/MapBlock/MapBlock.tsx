@@ -5,7 +5,7 @@ import { YMaps, Map, Placemark, FullscreenControl } from '@pbe/react-yandex-maps
 export default function MapBlock() {
   const coordinates = [51.569315, 46.031589];
   return (
-    <div className={classes.map__container}>
+    <section className={classes.map__container}>
       <h1 className={classes.map__title}>Схема проезда</h1>
       <YMaps query={{ lang: 'ru_RU' }}>
         <div className={classes.map__board}>
@@ -22,6 +22,6 @@ export default function MapBlock() {
           </Map>
         </div>
       </YMaps>
-    </div>
+    </section>
   );
 }

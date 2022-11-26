@@ -70,3 +70,9 @@
 .cl_btn_2 div:hover .close-btn {
   opacity: 1;
 }
+
+@media (max-width: 768px) { 
+  .btn {
+    margin-right: 0;
+  }
+}

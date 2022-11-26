@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './Header.module.css';
+import './Header.css';
 import Button from '../UI/button/Button';
 import logo from '../../assets/logo.svg';
 import { Context } from '../../Context/Context';
+import Hamburger from '../../components/Hamburger/Hamburger';
 
 export default function Header() {
-  const { state, dispatch } = useContext(Context);
+  const { isBurger, state, dispatch } = useContext(Context);
   const changeModal = () => {
     if (state.isOpenModal) {
       if (dispatch) {
@@ -19,29 +20,32 @@ export default function Header() {
     }
   };
   return (
-    <header className={styles.header}>
-      <img
-        src={logo}
-        alt=""
-        className={styles.header__logo}
-        onClick={() => {
-          window.scrollTo(0, 0);
-        }}
-      />
-      <nav className={styles.navbar}>
-        <div className={styles.navbar__links}>
-          <NavLink className={styles.navbar__link} to="/">
+    <header className="header">
+      <NavLink className="header__logo_wrapper" to="/">
+        <img
+          src={logo}
+          alt=""
+          className="header__logo"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        />
+      </NavLink>
+      <nav className={isBurger ? 'navbar active' : 'navbar'}>
+        <div className="navbar__links">
+          <NavLink className="navbar__link" to="/">
             Главная
           </NavLink>
-          <NavLink className={styles.navbar__link} to="/about">
+          <NavLink className="navbar__link" to="/about">
             О компании
           </NavLink>
-          <NavLink className={styles.navbar__link} to="/contacts">
+          <NavLink className="navbar__link" to="/contacts">
             Контакты
           </NavLink>
         </div>
       </nav>
       <Button onClick={changeModal}>Оставить заявку</Button>
+      <Hamburger />
     </header>
   );
 }

@@ -5,7 +5,7 @@ import errorImg from '../../assets/error-image.jpg';
 
 export default function Error() {
   return (
-    <section className={classes.error__contsiner}>
+    <main className={classes.error__contsiner}>
       <div className={classes.error_block}>
         <div className={classes.error_number_wrapper}>
           <div className={classes.error_number}>404</div>
@@ -21,6 +21,6 @@ export default function Error() {
       <div className={classes.container__img}>
         <img src={errorImg} alt="broken jac" width="400px" height="400px"></img>
       </div>
-    </section>
+    </main>
   );
 }

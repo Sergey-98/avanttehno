@@ -3,7 +3,7 @@ import classes from './Requisites.module.css';
 
 export default function Requisites() {
   return (
-    <div className={classes.information__requisites}>
+    <section className={classes.information__requisites}>
       <h3 className={classes.information__requisites__title}>Информация для оплаты:</h3>
       <div className={classes.requisit}>
         <div className={classes.requisit__title}>
@@ -27,6 +27,6 @@ export default function Requisites() {
           <span className={classes.requisit__text}>30101.810.2.00000000607</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useState } from 'react';
 import './styles/App.css';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './components/AppRouter';
@@ -22,9 +22,10 @@ function App() {
   };
   const [state, dispatch] = useReducer(reducer, initialState);
   const [formState, formDispatch] = useReducer(formReducer, initialFormState);
+  const [isBurger, setIsBurger] = useState(false);
 
   return (
-    <Context.Provider value={{ state, dispatch, formState, formDispatch }}>
+    <Context.Provider value={{ state, dispatch, formState, formDispatch, isBurger, setIsBurger }}>
       <div className="App">
         <BrowserRouter>
           <Header />
