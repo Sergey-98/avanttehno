@@ -6,7 +6,7 @@ export default function MainAbout() {
   return (
     <section className={styles.about__company_section}>
       <div className={styles.about__title}>
-        <h2>О компании</h2>
+        <h2 className={styles.main__title}>О компании</h2>
       </div>
       <div className={styles.about__container}>
         <div className={styles.about__textblock}>

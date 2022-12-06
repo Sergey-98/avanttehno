@@ -3,17 +3,18 @@
   src: url(../../../assets/fonts/RezaZulmiSerif.ttf);
 }
 .contacts__director {
+  width: 40vw;
   padding: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 3px solid #000080;
   background: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .director__container {
-  width: 30vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -21,8 +22,11 @@
   color: black;
 }
 .director__title {
+  text-align: center;
+  margin-bottom: 5%;
   color: black;
   font-family: 'Reza', serif;
+  font-size: 40px;
 }
 .director__img_wrapper {
   overflow: hidden;
@@ -50,12 +54,45 @@
 .director__text_name {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .director__text_container {
+  font-size: 30px;
   width: 70%;
   display: flex;
   flex-wrap: nowrap;
   gap: 2vw;
   justify-content: center;
   flex-direction: column;
+}
+.director__text_quote {
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1200px) {
+  .director__text_container {
+    font-size: 25px;
+  }
+  .director__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .contacts__director {
+    margin: 0 auto;
+    width: 70vw;
+  }
+}
+@media (max-width: 768px) {
+  .director__title {
+    font-size: 23px;
+  }
+  .director__text_container {
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .contacts__director {
+    width: 90vw;
+  }
 }

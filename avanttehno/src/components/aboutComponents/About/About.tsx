@@ -6,11 +6,11 @@ export default function About() {
     <section className={styles.about__company_wrapper}>
       <div className={styles.about__company_textwrapper}>
         <div className={styles.about__company_title}>
-          <h1>О компании</h1>
+          <h2 className={styles.main__title}>О компании</h2>
         </div>
         <p className={styles.about__company_text}>
           Наша компания более 10 лет занимается поставками складской техники по России, а также
-          является официальным дистрибьюером крупнейшего производителя JAC.
+          является официальным дистрибьютером крупнейшего производителя JAC.
         </p>
         <p className={styles.about__company_text}>
           Наша стратегия - продажа современой техники, отвечающей мировым стандартам качества. Мы

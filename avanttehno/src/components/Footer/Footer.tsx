@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer__container}>
       {icons.map((elem: string, id: number) => {
-        return <Contact icon={elem} title={titles[id]} text={texts[id]} id={id} key={id} />;
+        return <Contact icon={elem} title={titles[id]} text={texts[id]} key={id} />;
       })}
     </footer>
   );

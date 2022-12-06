@@ -26,3 +26,9 @@
   background: #000080;
   cursor: pointer;
 }
+
+@media(max-width: 800px) {
+  .information__btn_show_requisites {
+    width: 80%;
+  }
+}

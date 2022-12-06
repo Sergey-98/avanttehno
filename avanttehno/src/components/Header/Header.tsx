@@ -7,7 +7,7 @@ import { Context } from '../../Context/Context';
 import Hamburger from '../../components/Hamburger/Hamburger';
 
 export default function Header() {
-  const { isBurger, state, dispatch } = useContext(Context);
+  const { isBurger, setIsBurger, state, dispatch } = useContext(Context);
   const changeModal = () => {
     if (state.isOpenModal) {
       if (dispatch) {
@@ -17,6 +17,11 @@ export default function Header() {
       if (dispatch) {
         dispatch({ type: 'resetModal', payload: { isOpenModal: true } });
       }
+    }
+  };
+  const changeBurger = () => {
+    if (isBurger) {
+      setIsBurger(false);
     }
   };
   return (
@@ -33,13 +38,13 @@ export default function Header() {
       </NavLink>
       <nav className={isBurger ? 'navbar active' : 'navbar'}>
         <div className="navbar__links">
-          <NavLink className="navbar__link" to="/">
+          <NavLink onClick={changeBurger} className="navbar__link" to="/">
             Главная
           </NavLink>
-          <NavLink className="navbar__link" to="/about">
+          <NavLink onClick={changeBurger} className="navbar__link" to="/about">
             О компании
           </NavLink>
-          <NavLink className="navbar__link" to="/contacts">
+          <NavLink onClick={changeBurger} className="navbar__link" to="/contacts">
             Контакты
           </NavLink>
         </div>

@@ -9,7 +9,12 @@ export default function MapBlock() {
       <h1 className={classes.map__title}>Схема проезда</h1>
       <YMaps query={{ lang: 'ru_RU' }}>
         <div className={classes.map__board}>
-          <Map defaultState={{ center: coordinates, zoom: 17 }} width={'40vw'} height={'60vh'}>
+          <Map
+            defaultState={{ center: coordinates, zoom: 17 }}
+            width={'40vw'}
+            height={'60vh'}
+            className={classes.map}
+          >
             <FullscreenControl options={{ float: 'right' }} />
             <Placemark
               geometry={coordinates}

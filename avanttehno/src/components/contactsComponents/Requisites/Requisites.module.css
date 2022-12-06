@@ -7,6 +7,7 @@
   background-color: #ffffff;
   border: 2px solid #000080;
 }
+
 .information__requisites__title {
   color: #000080;
   font-weight: 700;
@@ -14,6 +15,7 @@
 }
 .requisit {
   display: flex;
+  gap: 2%;
 }
 .requisit__title {
   width: 100%;
@@ -30,4 +32,24 @@
   border-radius: 10px;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   color: grey;
+}
+.requisit__subtitle {
+  white-space: nowrap
+}
+
+@media(max-width: 500px) {
+  .information__requisites {
+    margin: 0 auto;
+    margin-left: -2.5%;
+    width: 100%;
+  }
+  .requisit__title {
+    font-size: 14px;
+  }
+  .requisit__text {
+    font-size: 14px;
+  }
+  .requisit {
+    gap: 1%;
+  }
 }

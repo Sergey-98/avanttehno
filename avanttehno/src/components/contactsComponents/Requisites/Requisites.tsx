@@ -7,14 +7,14 @@ export default function Requisites() {
       <h3 className={classes.information__requisites__title}>Информация для оплаты:</h3>
       <div className={classes.requisit}>
         <div className={classes.requisit__title}>
-          <span>ИНН:</span>
-          <span>КПП:</span>
-          <span>ОГРН:</span>
-          <span>ОКПО:</span>
-          <span>ОКАТО:</span>
-          <span>Расчетный счёт:</span>
-          <span>БИК:</span>
-          <span>Корр. счёт:</span>
+          <span className={classes.requisit__subtitle}>ИНН:</span>
+          <span className={classes.requisit__subtitle}>КПП:</span>
+          <span className={classes.requisit__subtitle}>ОГРН:</span>
+          <span className={classes.requisit__subtitle}>ОКПО:</span>
+          <span className={classes.requisit__subtitle}>ОКАТО:</span>
+          <span className={classes.requisit__subtitle}>Расчетный счёт:</span>
+          <span className={classes.requisit__subtitle}>БИК:</span>
+          <span className={classes.requisit__subtitle}>Корр. счёт:</span>
         </div>
         <div className={classes.requisit__text}>
           <span className={classes.requisit__text}>6452105360</span>

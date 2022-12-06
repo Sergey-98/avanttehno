@@ -7,14 +7,13 @@
 }
 .about__container {
   display: flex;
-  margin-bottom: 2%;
 }
 .about__photo {
   position: relative;
   right: 3%;
   margin-top: 6%;
-  width: 40%;
-  height: 55vh;
+  width: 40vw;
+  height: 50%;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -26,15 +25,15 @@
   margin-top: 2%;
   margin-bottom: 7%;
   margin-left: 15%;
-  width: 40%;
-  /* height: 55vh; */
+  width: 40vw;
+  height: 50%;
   padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1vw;
   background: #ffffff;
   border: 1px solid grey;
-  z-index: 30;
+  z-index: 5;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -49,7 +48,7 @@
   background: rgba(75, 78, 255, 0.05);
   padding: 50px 150px;
 }
-.about__title h2 {
+.about__title .main__title {
   font-family: 'Merriweather', serif;
   position: relative;
   color: #000000;
@@ -63,7 +62,7 @@
   margin: 0;
   line-height: 1;
 }
-.about__title h2:before {
+.about__title .main__title:before {
   content: '';
   position: absolute;
   width: 28px;
@@ -74,8 +73,119 @@
   box-sizing: border-box;
 }
 .about__subtitle {
-  font-size: 24px;
+  font-size: 2.2vw;
+  text-align: center;
 }
 .about__textblock_description {
   font-size: 1vw;
+}
+
+@media (max-width: 1200px) { 
+  .about__title {
+    padding: 50px 100px;
+  }
+  .about__title .main__title {
+    font-size: 35px;
+  }
+  .about__textblock_description {
+    font-size: 1.1vw;
+  }
+}
+@media (max-width: 930px) {
+  .about__container {
+    position: relative;
+  }
+  .about__title .main__title {
+    font-size: 30px;
+  } 
+  .about__photo {
+    display: none;
+  }
+  .about__container {
+    background-image: url('../../../assets/img/JAC_company.jpeg');
+    background-size: cover;
+  }
+  .about__textblock {
+    background: rgba(255, 255, 255, 0.75);
+    margin: 3% auto;
+    width: 65vw;
+    height: 100%;
+  }
+  .about__subtitle {
+    font-size: 2.7vw;
+  }
+  .about__textblock_description {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 600px) {
+  .about__title {
+    padding: 40px 70px;
+  }
+  .about__title .main__title {
+    font-size: 25px;
+  }
+  .about__title .main__title:before {
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    left: -20px;
+  }
+  .about__textblock {
+    background: rgba(255, 255, 255, 0.75);
+    margin: 3% auto;
+    width: 70vw;
+    height: 100%;
+    padding: 30px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+  .about__subtitle {
+    font-size: 3.5vw;
+  }
+  .about__textblock_description {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 450px) { 
+  .about__title {
+    padding: 30px 60px;
+  }
+  .about__title .main__title {
+    font-size: 20px;
+  }
+  .about__title .main__title:before {
+    width: 18px;
+    height: 18px;
+    top: -18px;
+    left: -18px;
+  }
+  .about__textblock {
+    width: 80vw;
+    background: rgba(255, 255, 255, 0.75);
+  }
+  .about__subtitle {
+    font-size: 5vw;
+  }
+  .about__textblock_description {
+    font-size: 3.2vw;
+  }
+}
+@media (max-width: 340px) { 
+  .about__textblock {
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.75);
+  }
+  .about__title .main__title {
+    font-size: 19px;
+  }
+  .about__subtitle {
+    font-size: 6vw;
+  }
+  .about__textblock_description {
+    font-size: 4vw;
+  }
 }
