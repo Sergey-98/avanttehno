@@ -1,4 +1,11 @@
-import { State, FormParamState, DispatchType, DispatchFormType } from '../types/types';
+import {
+  State,
+  FormParamState,
+  DispatchType,
+  DispatchFormType,
+  ForkliftState,
+  DispatchForkliftType,
+} from '../types/types';
 
 export function reducer(state: State, action: DispatchType) {
   switch (action.type) {
@@ -56,6 +63,18 @@ export function formReducer(state: FormParamState, action: DispatchFormType) {
       };
     case 'errorMessage':
       // state.isOpenRequisites = action.payload.isOpenRequisites;
+      return {
+        ...state,
+      };
+    default:
+      return state;
+  }
+}
+
+export function forkliftReducer(state: ForkliftState, action: DispatchForkliftType) {
+  switch (action.type) {
+    case 'resetType':
+      state.type = action.payload.type;
       return {
         ...state,
       };

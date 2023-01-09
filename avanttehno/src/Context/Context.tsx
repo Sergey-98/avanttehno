@@ -1,5 +1,12 @@
 import React, { Dispatch, SetStateAction } from 'react';
-import { State, FormParamState, DispatchType, DispatchFormType } from '../types/types';
+import {
+  State,
+  FormParamState,
+  DispatchType,
+  DispatchFormType,
+  ForkliftState,
+  DispatchForkliftType,
+} from '../types/types';
 
 type PropsP = {
   state: State;
@@ -7,7 +14,11 @@ type PropsP = {
   formState: FormParamState;
   formDispatch: Dispatch<DispatchFormType>;
   isBurger: boolean;
+  catalogTitle: string;
+  setCatalogTitle: Dispatch<SetStateAction<string>>;
   setIsBurger: Dispatch<SetStateAction<boolean>>;
+  forkliftState: ForkliftState;
+  forkliftDispatch: Dispatch<DispatchForkliftType>;
 };
 
 export const Context = React.createContext<PropsP>({
@@ -26,4 +37,8 @@ export const Context = React.createContext<PropsP>({
   formDispatch: () => {},
   isBurger: false,
   setIsBurger: () => {},
+  catalogTitle: '',
+  setCatalogTitle: () => {},
+  forkliftState: { type: '' },
+  forkliftDispatch: () => {},
 });

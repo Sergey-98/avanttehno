@@ -11,7 +11,7 @@
   z-index: 500;
 }
 .navbar__links {
-  width: 40vw;
+  width: 45vw;
   font-size: 23px;
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@
   to {right: 0%;}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .header {
     padding: 0.7em 5%;
   }

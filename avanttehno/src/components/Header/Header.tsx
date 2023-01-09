@@ -41,6 +41,9 @@ export default function Header() {
           <NavLink onClick={changeBurger} className="navbar__link" to="/">
             Главная
           </NavLink>
+          <NavLink onClick={changeBurger} className="navbar__link" to="/catalog">
+            Каталог
+          </NavLink>
           <NavLink onClick={changeBurger} className="navbar__link" to="/about">
             О компании
           </NavLink>
