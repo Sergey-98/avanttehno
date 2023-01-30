@@ -5,6 +5,7 @@ import tryForklift from '../assets/forklifts/TitlePictures/tricycleForklift.png'
 import offRForklift from '../assets/forklifts/TitlePictures/offRoadForklift.png';
 import sForklift from '../assets/forklifts/TitlePictures/sideForklift.png';
 import richtrakPhotos from '../assets/forklifts/TitlePictures/richtrakForklift.png';
+import additionalEquipment from '../assets/forklifts/TitlePictures/additionalEquipment.png';
 
 import CPD13 from '../assets/forklifts/Electric/cpd13.png';
 import CPD15 from '../assets/forklifts/Electric/cpd15.png';
@@ -68,6 +69,19 @@ import CQDR10 from '../assets/forklifts/Richtraki/cqd10.png';
 import CQDR15 from '../assets/forklifts/Richtraki/cqd15.png';
 import CQDR16 from '../assets/forklifts/Richtraki/cqd16.png';
 import CQDR20 from '../assets/forklifts/Richtraki/cqd20.png';
+
+import gasEquipment from '../assets/forklifts/Additional/gasEquipment.png';
+import capturingBarrels from '../assets/forklifts/Additional/capturingBarrels.png';
+import сabinWithHeater from '../assets/forklifts/Additional/cabinWithHeater.png';
+import superelasticWheels from '../assets/forklifts/Additional/superelasticWheels.png';
+import craneBeam from '../assets/forklifts/Additional/craneBeam.png';
+import multipalletForks from '../assets/forklifts/Additional/multipalletForks.png';
+import forkPositioner from '../assets/forklifts/Additional/forkPositioner.png';
+import rotator from '../assets/forklifts/Additional/rotator.png';
+import loadStabilizer from '../assets/forklifts/Additional/loadStabilizer.png';
+import brush from '../assets/forklifts/Additional/brush.png';
+import bucketLoader from '../assets/forklifts/Additional/bucketLoader.png';
+import forkExtension from '../assets/forklifts/Additional/forkExtension.png';
 
 export const electricForklift = {
   CPD13: {
@@ -706,6 +720,57 @@ export const richtraki = {
   },
 };
 
+export const additionalEquipments = {
+  gasEquipment: {
+    title: 'Газовое оборудование',
+    img: gasEquipment,
+  },
+  capturingBarrels: {
+    title: 'Захват бочек (рулонов)',
+    img: capturingBarrels,
+  },
+  сabinWithHeater: {
+    title: 'Кабина с отопителем',
+    img: сabinWithHeater,
+  },
+  superelasticWheels: {
+    title: 'Колеса суперэластик',
+    img: superelasticWheels,
+  },
+  craneBeam: {
+    title: 'Кран-балка',
+    img: craneBeam,
+  },
+  multipalletForks: {
+    title: 'Мультипаллетные вилы',
+    img: multipalletForks,
+  },
+  forkPositioner: {
+    title: 'Позиционер вил',
+    img: forkPositioner,
+  },
+  rotator: {
+    title: 'Ротатор',
+    img: rotator,
+  },
+  loadStabilizer: {
+    title: 'Стабилизатор груза',
+    img: loadStabilizer,
+  },
+  brush: {
+    title: 'Щётка',
+    img: brush,
+  },
+  bucketLoader: {
+    title: 'Ковровые штыри',
+    img: bucketLoader,
+  },
+  forkExtension: {
+    title: 'Удлинители вил',
+    img: forkExtension,
+  },
+};
+
 export const data = {
   electricForklift: {
     title: 'Электропогрузчики',
@@ -741,5 +806,10 @@ export const data = {
     title: 'Ричтраки JAC',
     img: richtrakPhotos,
     values: richtraki,
+  },
+  additionalEquipment: {
+    title: 'Дополнительное оборудование',
+    img: additionalEquipment,
+    values: additionalEquipments,
   },
 };

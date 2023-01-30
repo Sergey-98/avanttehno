@@ -20,6 +20,7 @@ export type State = {
   isOpenRequisites?: boolean;
   isOpenMenu?: boolean;
   isOpenModal?: boolean;
+  isOpenModalCallback?: boolean;
 };
 
 export type DispatchType = {
@@ -37,6 +38,11 @@ export type DispatchFormType = {
   payloadForm: FormParamState;
 };
 
+export type DispatchFormCallbackType = {
+  type?: string;
+  payloadFormCallback: FormCallbackParamState;
+};
+
 export type InfoProps = {
   src: string;
   title: string;
@@ -48,10 +54,17 @@ export type FormParamState = {
   phoneNumber?: string;
   email?: string;
   message?: string;
+  model?: string;
   errorName?: string;
   errorNumber?: string;
   errorEmail?: string;
   errorMessage?: string;
+};
+export type FormCallbackParamState = {
+  name?: string;
+  phoneNumber?: string;
+  errorName?: string;
+  errorNumber?: string;
 };
 
 // export type Forklifts = {

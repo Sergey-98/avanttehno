@@ -1,8 +1,10 @@
 import {
   State,
   FormParamState,
+  FormCallbackParamState,
   DispatchType,
   DispatchFormType,
+  DispatchFormCallbackType,
   ForkliftState,
   DispatchForkliftType,
 } from '../types/types';
@@ -16,6 +18,11 @@ export function reducer(state: State, action: DispatchType) {
       };
     case 'resetModal':
       state.isOpenModal = action.payload.isOpenModal;
+      return {
+        ...state,
+      };
+    case 'resetModalCallback':
+      state.isOpenModalCallback = action.payload.isOpenModalCallback;
       return {
         ...state,
       };
@@ -46,6 +53,11 @@ export function formReducer(state: FormParamState, action: DispatchFormType) {
       return {
         ...state,
       };
+    case 'model':
+      state.model = action.payloadForm.model;
+      return {
+        ...state,
+      };
     case 'errorName':
       // state.isOpenRequisites = action.payload.isOpenRequisites;
       return {
@@ -63,6 +75,26 @@ export function formReducer(state: FormParamState, action: DispatchFormType) {
       };
     case 'errorMessage':
       // state.isOpenRequisites = action.payload.isOpenRequisites;
+      return {
+        ...state,
+      };
+    default:
+      return state;
+  }
+}
+
+export function formCallbackReducer(
+  state: FormCallbackParamState,
+  action: DispatchFormCallbackType
+) {
+  switch (action.type) {
+    case 'name':
+      state.name = action.payloadFormCallback.name;
+      return {
+        ...state,
+      };
+    case 'phoneNumber':
+      state.phoneNumber = action.payloadFormCallback.phoneNumber;
       return {
         ...state,
       };

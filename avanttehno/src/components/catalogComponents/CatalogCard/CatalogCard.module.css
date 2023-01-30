@@ -24,6 +24,7 @@
   -o-transform: scale(1.05, 1.05);
 }
 .mainCatalog_title {
+  width: 300px;
   margin: 0 5px;
   font-size: 20px;
   text-align: center;

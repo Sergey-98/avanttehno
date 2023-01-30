@@ -10,7 +10,6 @@ export default function Modal() {
   const form = useRef<HTMLFormElement>(null);
 
   // login: avanttehnooleg@yandex.ru
-  // password: aeiaevczrxesxtwb
 
   const sendEmail = (event: React.FormEvent) => {
     event.preventDefault();
@@ -38,6 +37,7 @@ export default function Modal() {
   const resetForm = () => {
     if (formDispatch) {
       form.current?.reset();
+      formDispatch({ type: 'model', payloadForm: { model: '' } });
       formDispatch({ type: 'name', payloadForm: { name: '' } });
       formDispatch({ type: 'phoneNumber', payloadForm: { phoneNumber: '' } });
       formDispatch({ type: 'email', payloadForm: { email: '' } });
@@ -71,6 +71,9 @@ export default function Modal() {
       if (dispatch) {
         dispatch({ type: 'resetModal', payload: { isOpenModal: false } });
       }
+      if (formDispatch) {
+        formDispatch({ type: 'model', payloadForm: { model: '' } });
+      }
     } else {
       if (dispatch) {
         dispatch({ type: 'resetModal', payload: { isOpenModal: true } });
@@ -84,6 +87,20 @@ export default function Modal() {
         <Close onClick={changeModal}></Close>
       </span>
       <form className={styles.modal_container__form} onSubmit={sendEmail} ref={form}>
+        <h2 className={styles.modal_title}>
+          Оставьте Вашу заявку и мы обязательно свяжемся с Вами!
+        </h2>
+        {formState.model ? (
+          <h3 className={styles.modal_subtitle}>Модель для заказа: {formState.model}</h3>
+        ) : null}
+        <label>
+          <input
+            className={styles.input__text}
+            value={formState.model}
+            name="model"
+            type="hidden"
+          />
+        </label>
         <label>
           <input
             className={styles.input__text}
@@ -91,7 +108,7 @@ export default function Modal() {
             name="name"
             placeholder={'Имя'}
             autoComplete="nope"
-            type={'text'}
+            type="text"
             onChange={inputText}
           />
           <span className={formState.errorName ? 'error-text' : 'none'}>{formState.errorName}</span>
@@ -103,7 +120,7 @@ export default function Modal() {
             value={formState.phoneNumber}
             placeholder={'Номер телефона'}
             autoComplete="nope"
-            type={'tel'}
+            type="tel"
             onChange={inputNumber}
           />
           <span className={formState.errorNumber ? 'error-text' : 'none'}>
@@ -117,7 +134,7 @@ export default function Modal() {
             name="email"
             placeholder={'e-mail'}
             autoComplete="off"
-            type={'email'}
+            type="email"
             onChange={inputEmail}
           />
           <span className={formState.errorEmail ? 'error-text' : 'none'}>
@@ -131,7 +148,7 @@ export default function Modal() {
             name="message"
             placeholder={'Ваше сообщение'}
             autoComplete="nope"
-            type={'text'}
+            type="text"
             onChange={inputMessage}
           />
           <span className={formState.errorMessage ? 'error-text' : 'none'}>

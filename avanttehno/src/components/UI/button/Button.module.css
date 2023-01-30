@@ -60,11 +60,11 @@
 }
 .cl_btn_2 div:hover .leftright {
   transform: rotate(-45deg);
-  background-color: #000;
+  background-color: rgb(44, 15, 170);
 }
 .cl_btn_2 div:hover .rightleft {
   transform: rotate(45deg);
-  background-color: #000;
+  background-color: rgb(44, 15, 170);
 }
 .cl_btn_2 div:hover .close-btn {
   opacity: 1;
