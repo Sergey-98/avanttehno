@@ -14,7 +14,7 @@ export default function CatalogCards() {
   const forkliftData = Object.values(data);
   const openForkliftType = (forkliftType: string, forkliftD: string) => {
     forkliftDispatch({ type: 'resetType', payload: { type: forkliftType } });
-    navigate(`/${forkliftType}`);
+    navigate(`/catalog/${forkliftType}`);
     localStorage.setItem('typeForklift', forkliftType);
     localStorage.setItem('catalogTitle', forkliftD);
     setCatalogTitle(forkliftD);

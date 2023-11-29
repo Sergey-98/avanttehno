@@ -10,7 +10,7 @@ export default function MainAbout() {
       </div>
       <div className={styles.about__container}>
         <div className={styles.about__textblock}>
-          <h3 className={styles.about__subtitle}>Поставщик погрузчиков JAC в России</h3>
+          <h3 className={styles.about__subtitle}>Поставщик вилочных погрузчиков JAC в России</h3>
           <p className={styles.about__textblock_description}>
             <i>ООО &quot;АвантТехно&quot;</i> - официальный дилер по продаже складской техники фирмы
             JAC по Российской Федерации с 2013 года.

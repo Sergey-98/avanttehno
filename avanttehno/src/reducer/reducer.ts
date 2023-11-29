@@ -64,12 +64,15 @@ export function formReducer(state: FormParamState, action: DispatchFormType) {
         ...state,
       };
     case 'errorNumber':
-      // state.isOpenRequisites = action.payload.isOpenRequisites;
+      state.errorNumber = action.payloadForm.errorNumber;
       return {
         ...state,
       };
     case 'errorEmail':
-      // state.isOpenRequisites = action.payload.isOpenRequisites;
+      state.errorEmail = action.payloadForm.errorEmail;
+      return {
+        ...state,
+      };
       return {
         ...state,
       };

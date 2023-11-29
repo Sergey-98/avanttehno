@@ -10,6 +10,6 @@ export const routes = [
   { path: '/contacts', component: ContactsPage, exact: true },
   { path: '/about', component: AboutCompany, exact: true },
   { path: '/catalog', component: Catalog, exact: true },
-  { path: '/:type', component: ForkliftsCatalog, exact: true },
+  { path: '/catalog/:type', component: ForkliftsCatalog, exact: true },
   { path: '*', component: Error, exact: true },
 ];

@@ -42,6 +42,8 @@ export default function Modal() {
       formDispatch({ type: 'phoneNumber', payloadForm: { phoneNumber: '' } });
       formDispatch({ type: 'email', payloadForm: { email: '' } });
       formDispatch({ type: 'message', payloadForm: { message: '' } });
+      formDispatch({ type: 'errorNumber', payloadForm: { errorNumber: '' } });
+      formDispatch({ type: 'errorEmail', payloadForm: { errorEmail: '' } });
       dispatch({ type: 'resetModal', payload: { isOpenModal: false } });
     }
   };
@@ -80,7 +82,45 @@ export default function Modal() {
       }
     }
   };
-
+  const checkNumber = () => {
+    const reg = /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/;
+    const valid = reg.test(String(formState.phoneNumber));
+    if (!valid) {
+      if (formDispatch) {
+        formDispatch({
+          type: 'errorNumber',
+          payloadForm: { errorNumber: 'формат: 71234567890' },
+        });
+      }
+    } else {
+      if (formDispatch) {
+        formDispatch({
+          type: 'errorNumber',
+          payloadForm: { errorNumber: '' },
+        });
+      }
+    }
+  };
+  const checkEmail = () => {
+    const reg =
+      /^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i;
+    const valid = reg.test(String(formState.email));
+    if (!valid) {
+      if (formDispatch) {
+        formDispatch({
+          type: 'errorEmail',
+          payloadForm: { errorEmail: 'неверный формат' },
+        });
+      }
+    } else {
+      if (formDispatch) {
+        formDispatch({
+          type: 'errorEmail',
+          payloadForm: { errorEmail: '' },
+        });
+      }
+    }
+  };
   return (
     <section className={styles.modal_container}>
       <span className={styles.modal_close}>
@@ -93,7 +133,7 @@ export default function Modal() {
         {formState.model ? (
           <h3 className={styles.modal_subtitle}>Модель для заказа: {formState.model}</h3>
         ) : null}
-        <label>
+        <label className={styles.label_form}>
           <input
             className={styles.input__text}
             value={formState.model}
@@ -101,7 +141,7 @@ export default function Modal() {
             type="hidden"
           />
         </label>
-        <label>
+        <label className={styles.label_form}>
           <input
             className={styles.input__text}
             value={formState.name}
@@ -113,7 +153,7 @@ export default function Modal() {
           />
           <span className={formState.errorName ? 'error-text' : 'none'}>{formState.errorName}</span>
         </label>
-        <label>
+        <label className={styles.label_form}>
           <input
             className={styles.input__text}
             name="phone"
@@ -122,26 +162,28 @@ export default function Modal() {
             autoComplete="nope"
             type="tel"
             onChange={inputNumber}
+            onBlur={checkNumber}
           />
           <span className={formState.errorNumber ? 'error-text' : 'none'}>
             {formState.errorNumber}
           </span>
         </label>
-        <label>
+        <label className={styles.label_form}>
           <input
             className={styles.input__text}
             value={formState.email}
             name="email"
             placeholder={'e-mail'}
-            autoComplete="off"
+            autoComplete="on"
             type="email"
             onChange={inputEmail}
+            onBlur={checkEmail}
           />
           <span className={formState.errorEmail ? 'error-text' : 'none'}>
             {formState.errorEmail}
           </span>
         </label>
-        <label>
+        <label className={styles.label_form}>
           <input
             className={styles.input__text}
             value={formState.message}

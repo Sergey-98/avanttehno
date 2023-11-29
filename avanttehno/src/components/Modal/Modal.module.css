@@ -88,6 +88,12 @@
   font-size: 25px;
   background: #000080;
 }
+.label_form {
+  width: 28vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
 @media(max-width: 768px) {
   .modal_container__form {
@@ -99,6 +105,9 @@
     border: 1px solid #eee;
     border-radius: 10px;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  }
+  .label_form {
+    width: 50vw;
   }
   .modal_close {
     left: 55%;
@@ -126,5 +135,9 @@
   }
   .input__text {
     width: 70vw;
+  }
+  .label_form {
+    width: 80vw;
+    font-size: 15px;
   }
 }
