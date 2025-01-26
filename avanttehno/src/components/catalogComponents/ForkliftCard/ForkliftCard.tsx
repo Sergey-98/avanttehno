@@ -49,6 +49,9 @@ export default function CatalogCard(props: PropsForkliftCardType) {
         {props.cardValue.description?.liftingHeight ? (
           <span>Высота подъёма: {props.cardValue.description?.liftingHeight}</span>
         ) : null}
+        {props.cardValue.description?.batteryCapacity ? (
+          <span>Ёмкость АКБ: {props.cardValue.description?.batteryCapacity}</span>
+        ) : null}
         {props.cardValue.description?.wheelType ? (
           <span>Тип шин: {props.cardValue.description?.wheelType}</span>
         ) : null}

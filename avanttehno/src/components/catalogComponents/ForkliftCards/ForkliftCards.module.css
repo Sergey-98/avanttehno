@@ -1,9 +1,9 @@
 .mainCatalog_wrapper {
   margin: 3% auto;
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 35px;
 }

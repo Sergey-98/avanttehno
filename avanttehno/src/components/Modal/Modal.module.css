@@ -74,7 +74,7 @@
   align-self: center;
   width: 150px;
   height: 40px;
-  border: 1px solid #000080;
+  border: 1px solid #000000;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -86,7 +86,7 @@
 .input__submit:hover {
   width: 25%;
   font-size: 25px;
-  background: #000080;
+  background: #000000;
 }
 .label_form {
   width: 28vw;

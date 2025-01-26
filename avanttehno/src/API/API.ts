@@ -1,13 +1,13 @@
-import { data, electricForklift, petrolForklift } from '../data/data';
+import { result } from '../data/data';
 
 export const getCatalogData = () => {
-  return data;
+  return result;
 };
 
-export const getTypeData = () => {
-  const obj = {
-    electricForklift: electricForklift,
-    petrolForklift: petrolForklift,
-  };
-  return obj;
-};
+// export const getTypeData = () => {
+//   const obj = {
+//     electricForklift: electricForklift,
+//     petrolForklift: petrolForklift,
+//   };
+//   return obj;
+// };

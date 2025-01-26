@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Reza';
+  font-family: Stolzl;
   src: url(../../../assets/fonts/RezaZulmiSerif.ttf);
 }
 .partners_section {
@@ -13,7 +13,7 @@
 }
 .partners_title {
   margin-bottom: 2%;
-  font-family: 'Reza';
+  font-family: Stolzl;
   font-size: 40px;
 }
 .partners_section__cards {

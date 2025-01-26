@@ -11,7 +11,7 @@
   align-items: center;
   gap: 1%;
   background-color: #8f6969;
-  border: 1px solid #000080;
+  border: 1px solid #000000;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -69,7 +69,7 @@
   align-self: center;
   width: 12vw;
   height: 40px;
-  border: 1px solid #000080;
+  border: 1px solid #000000;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -79,15 +79,15 @@
   color: #4682B4;
 }
 .input__submit:hover {
-  background: #000080;
+  background: #000000;
   color: #ffffff;
 }
 .modal__title_block {
   width: 100%;
   height: 20vh;
-  border-bottom: 1px solid #000080;
+  border-bottom: 1px solid #000000;
   color: white;
-  background: linear-gradient(to bottom right, #000080, #540101);
+  background: linear-gradient(to bottom right, #000000, #540101);
   display: flex;
   flex-direction: column;
   justify-content: center;

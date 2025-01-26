@@ -13,7 +13,7 @@ export default function ModalCallback() {
     event.preventDefault();
     if (form.current) {
       emailjs
-        .sendForm('service_ksceqzu', 'template_v8msxyq', form.current, 'a16Nmw3f7CqETrIRS')
+        .sendForm('service_ksceqzu', 'template_8d5afbm', form.current, 'a16Nmw3f7CqETrIRS')
         .then(
           (result) => {
             console.log(result.text);

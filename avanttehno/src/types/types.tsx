@@ -81,9 +81,10 @@ export type ForkliftState = {
 };
 
 export type ForkliftCardType = {
+  url?: string,
   title?: string;
   img?: string;
-  values?: object;
+  elems?: object[];
 };
 
 type SpecificationsType = {
@@ -92,6 +93,7 @@ type SpecificationsType = {
   engineType?: string;
   liftingHeight?: string;
   wheelType?: string;
+  batteryCapacity?: string
 };
 
 export type TypeForForkliftCard = {

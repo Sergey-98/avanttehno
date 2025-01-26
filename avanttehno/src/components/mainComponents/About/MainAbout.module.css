@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Reza';
+  font-family: Stolzl;
   src: url(../../../assets/fonts/RezaZulmiSerif.ttf);
 }
 .about__company_section {
@@ -49,10 +49,9 @@
   padding: 50px 150px;
 }
 .about__title .main__title {
-  font-family: 'Merriweather', serif;
   position: relative;
   color: #000000;
-  font-family: 'Reza';
+  font-family: Stolzl;
   font-size: 50px;
   font-weight: normal;
   padding: 8px 20px 7px 20px;

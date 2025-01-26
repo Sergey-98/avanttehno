@@ -14,8 +14,8 @@
   gap: 10em;
 }
 .error_number_wrapper {
-  background-color: #000080;
-  border: 2px solid #000080;
+  background-color: #000000;
+  border: 2px solid #000000;
   transform: rotate(-5deg);
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
@@ -26,8 +26,8 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 5rem;
   padding: 25px;
-  background-color: #000080;
-  border: 2px solid #000080;
+  background-color: #000000;
+  border: 2px solid #000000;
   color: white;
   transform: rotate(-10deg);
   -webkit-transform: rotate(-10deg);

@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react';
+import React, { useReducer, useState, useEffect } from 'react';
 import { Parser } from 'html-to-react';
 import './styles/App.css';
 import { BrowserRouter } from 'react-router-dom';

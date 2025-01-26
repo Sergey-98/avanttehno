@@ -1,7 +1,7 @@
 .main__about__container {
   max-width: 100%;
   padding: 5%;
-  background: linear-gradient(to top, #540101, #000080);
+  background: inherit;
   display: flex;
   flex-direction: column;
   gap: 30px;

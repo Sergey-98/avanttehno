@@ -4,12 +4,15 @@ import ContactsPage from '../pages/ContactsPage/ContactsPage';
 import AboutCompany from '../pages/AboutCompany/AboutCompany';
 import Catalog from 'pages/CatalogPage/Catalog';
 import ForkliftsCatalog from 'components/catalogComponents/ForkliftsCatalog/ForkliftsCatalog';
+// import CatalogMainCards from 'components/catalogComponents/CatalogMainCards/CatalogMainCards';
+import CatalogCards from 'components/catalogComponents/CatalogCards/CatalogCards';
 
 export const routes = [
-  { path: '/', component: Main, exact: true },
-  { path: '/contacts', component: ContactsPage, exact: true },
-  { path: '/about', component: AboutCompany, exact: true },
-  { path: '/catalog', component: Catalog, exact: true },
-  { path: '/catalog/:type', component: ForkliftsCatalog, exact: true },
-  { path: '*', component: Error, exact: true },
+  { path: '/', component: Main },
+  { path: '/contacts', component: ContactsPage },
+  { path: '/about', component: AboutCompany },
+  { path: '/catalog', component: Catalog },
+  { path: '/catalog/:id', component: CatalogCards },
+  { path: '/catalog/:id/:name', component: ForkliftsCatalog },
+  { path: '*', component: Error },
 ];

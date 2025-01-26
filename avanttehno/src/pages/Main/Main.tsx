@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import MainPhoto from 'components/mainComponents/mainPhoto/mainPhoto';
@@ -8,6 +8,9 @@ import Advantages from 'components/mainComponents/advantages/advantages';
 import classes from './Main.module.css';
 
 export default function Main() {
+  useEffect(() => {
+    document.title = 'Главная | Avant-Техно';
+  }, []);
   //TODO: При необходимости удалить navigate!!!
   // const navigate = useNavigate();
   // useEffect(() => {
@@ -16,7 +19,6 @@ export default function Main() {
   return (
     <main className={classes.main__container}>
       <Helmet>
-        <title>Главная | Avant-Техно</title>
         <meta
           name="keywords"
           content='аванттехно, JAC, погрузчики в саратове, погрузчики в Саратове, JAC в Саратове, вилочные погрузчики jac, авант техно, AvantTehno, ООО"Авант Техно", ООО"Avant Техно" погрузчики в Саратове, погрузчики JAC, джак, погрузчики, официальный дилер JAC в Саратове, Бирюзова 22, продажа погрузчиков, спецтехника, спец техника в Саратове, погрузчик JAC, вилочный погрузчик, вилочный погрузчик саратов, вилочный погрузчик JAC'

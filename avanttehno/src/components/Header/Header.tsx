@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import Button from '../UI/button/Button';
@@ -6,8 +6,10 @@ import logo from '../../assets/logo.svg';
 import { Context } from '../../Context/Context';
 import Hamburger from '../../components/Hamburger/Hamburger';
 import PulseButton from 'components/UI/button/PulseButton/PulseButton';
+import HeaderNumbers from './HeaderNumbers/HeaderNumbers';
 
 export default function Header() {
+  const [links, setLinks] = useState('navbar__sublinks_wrapper');
   const { isBurger, setIsBurger, state, dispatch } = useContext(Context);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -44,8 +46,14 @@ export default function Header() {
       setIsBurger(false);
     }
   };
-  // const openCallBack = () => {};
-  // setTimeout(openCallBack, 7000);
+  const showSubLinks = () => {
+    console.log(links);
+    setLinks('navbar__sublinks_wrapper navbar_sublinks_show');
+  };
+  const hideSubLinks = () => {
+    console.log(links);
+    setLinks('navbar__sublinks_wrapper navbar__sublink');
+  };
   return (
     <header className="header">
       <NavLink className="header__logo_wrapper" to="/">
@@ -60,11 +68,36 @@ export default function Header() {
       </NavLink>
       <nav className={isBurger ? 'navbar active' : 'navbar'}>
         <div className="navbar__links">
-          <NavLink onClick={changeBurger} className="navbar__link" to="/">
+          {/* <NavLink onClick={changeBurger} className="navbar__link" to="/">
             Главная
-          </NavLink>
-          <NavLink onClick={changeBurger} className="navbar__link" to="/catalog">
+          </NavLink> */}
+          <div className="navbar__link_wrapper">
+            <NavLink
+              onClick={changeBurger}
+              onMouseOver={showSubLinks}
+              onMouseOut={hideSubLinks}
+              className="navbar__link"
+              to="/catalog"
+            >
+              Каталог
+            </NavLink>
+            <div onMouseOver={showSubLinks} onMouseOut={hideSubLinks} className={links}>
+              <NavLink className="navbar__sublink" to="catalog/jac_forklifts">
+                JAC
+              </NavLink>
+              <NavLink className="navbar__sublink" to="catalog/goodsense_forklifts">
+                GOODSENSE
+              </NavLink>
+              <NavLink className="navbar__sublink" to="catalog/shann_forklifts">
+                SHANN
+              </NavLink>
+            </div>
+          </div>
+          {/* <NavLink onClick={changeBurger} className="navbar__link" to="/catalog">
             Каталог
+          </NavLink> */}
+          <NavLink onClick={changeBurger} className="navbar__link" to="/services">
+            Сервис
           </NavLink>
           <NavLink onClick={changeBurger} className="navbar__link" to="/about">
             О компании
@@ -72,9 +105,10 @@ export default function Header() {
           <NavLink onClick={changeBurger} className="navbar__link" to="/contacts">
             Контакты
           </NavLink>
+          <HeaderNumbers />
         </div>
       </nav>
-      <Button onClick={changeModal}>Оставить заявку</Button>
+      {/* <Button onClick={changeModal}>Оставить заявку</Button> */}
       <Hamburger />
       <PulseButton onClick={changeModalCallback} />
     </header>

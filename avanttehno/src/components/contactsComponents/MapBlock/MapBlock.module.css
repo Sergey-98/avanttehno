@@ -6,11 +6,11 @@
   gap: 10px;
 }
 .map__board {
-  border: 2px solid #000080;
+  border: 2px solid #000000;
 }
 .map__title {
   font-size: 32px;
-  color: #000080;
+  color: #000000;
   font-weight: 700;
 }
 .map {
