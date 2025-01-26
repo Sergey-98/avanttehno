@@ -4,7 +4,7 @@ import styles from './Features.module.css';
 export default function Features() {
   return (
     <section className={styles.features_wrapper}>
-      <h1 className={styles.features_title}>Особенности погрузчиков JAC</h1>
+      <h1 className={styles.features_title}>Особенности вилочных погрузчиков JAC</h1>
       <span className={styles.features_text}>
         <p className={styles.features_textwrapper_text}>
           Вилочные погрузчики и складская техника фирмы JAC отличается доступными ценами, недорогим

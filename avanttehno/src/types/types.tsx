@@ -20,6 +20,7 @@ export type State = {
   isOpenRequisites?: boolean;
   isOpenMenu?: boolean;
   isOpenModal?: boolean;
+  isOpenModalCallback?: boolean;
 };
 
 export type DispatchType = {
@@ -27,9 +28,19 @@ export type DispatchType = {
   payload: State;
 };
 
+export type DispatchForkliftType = {
+  type?: string;
+  payload: ForkliftState;
+};
+
 export type DispatchFormType = {
   type?: string;
   payloadForm: FormParamState;
+};
+
+export type DispatchFormCallbackType = {
+  type?: string;
+  payloadFormCallback: FormCallbackParamState;
 };
 
 export type InfoProps = {
@@ -43,8 +54,62 @@ export type FormParamState = {
   phoneNumber?: string;
   email?: string;
   message?: string;
+  model?: string;
   errorName?: string;
   errorNumber?: string;
   errorEmail?: string;
   errorMessage?: string;
+};
+export type FormCallbackParamState = {
+  name?: string;
+  phoneNumber?: string;
+  errorName?: string;
+  errorNumber?: string;
+};
+
+// export type Forklifts = {
+//   electricForklift: ForkliftCardType;
+//   petrolForklift: ForkliftCardType;
+//   dieselForklift: ForkliftCardType;
+//   tricycleForklift: ForkliftCardType;
+//   offRoadForklift: ForkliftCardType;
+//   sideForklift: ForkliftCardType;
+// };
+
+export type ForkliftState = {
+  type: string;
+};
+
+export type ForkliftCardType = {
+  url?: string,
+  title?: string;
+  img?: string;
+  elems?: object[];
+};
+
+type SpecificationsType = {
+  model?: string;
+  loadCapacity?: string;
+  engineType?: string;
+  liftingHeight?: string;
+  wheelType?: string;
+  batteryCapacity?: string
+};
+
+export type TypeForForkliftCard = {
+  title?: string;
+  img?: string;
+  description?: SpecificationsType;
+};
+
+export type PropsCardType = {
+  cardValue: ForkliftCardType;
+  key: number;
+  onOpenForklift?: () => void;
+};
+
+export type PropsForkliftCardType = {
+  cardValue: TypeForForkliftCard;
+  key: number;
+  onOpenForklift?: () => void;
 };

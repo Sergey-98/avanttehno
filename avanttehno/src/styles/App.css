@@ -4,18 +4,28 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   z-index: -999;
+  pointer-events: auto !important;
 }
 
 body {
   pointer-events: auto !important;
 }
 
+main {
+  min-height: 70vh;
+}
+
 #root {
+  pointer-events: auto !important;
   display: flex;
   flex-direction: column;
-  background-color: #fdfafa;
+  background-color: #cee5e3;
 }
 
 .message {

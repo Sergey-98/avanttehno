@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import classes from './Page404.module.css';
-import errorImg from '../../assets/error-image.jpg';
+import errorImg from '../../assets/error-image.png';
 
 export default function Error() {
+  useEffect(() => {
+    document.title = '404 — Страница не найдена';
+  }, []);
   return (
     <main className={classes.error__contsiner}>
+      <Helmet>
+        <link rel="canonical" href="https://avanttehno.ru/PageNotFound" />
+      </Helmet>
       <div className={classes.error_block}>
         <div className={classes.error_number_wrapper}>
           <div className={classes.error_number}>404</div>
