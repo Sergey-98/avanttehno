@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import Button from '../UI/button/Button';
+// import Button from '../UI/button/Button';
 import logo from '../../assets/logo.svg';
 import { Context } from '../../Context/Context';
 import Hamburger from '../../components/Hamburger/Hamburger';
@@ -19,17 +19,17 @@ export default function Header() {
     }, 5000);
     return () => clearTimeout(timer);
   }, [dispatch]);
-  const changeModal = () => {
-    if (state.isOpenModal) {
-      if (dispatch) {
-        dispatch({ type: 'resetModal', payload: { isOpenModal: false } });
-      }
-    } else {
-      if (dispatch) {
-        dispatch({ type: 'resetModal', payload: { isOpenModal: true } });
-      }
-    }
-  };
+  // const changeModal = () => {
+  //   if (state.isOpenModal) {
+  //     if (dispatch) {
+  //       dispatch({ type: 'resetModal', payload: { isOpenModal: false } });
+  //     }
+  //   } else {
+  //     if (dispatch) {
+  //       dispatch({ type: 'resetModal', payload: { isOpenModal: true } });
+  //     }
+  //   }
+  // };
   const changeModalCallback = () => {
     if (state.isOpenModalCallback) {
       if (dispatch) {
@@ -93,9 +93,9 @@ export default function Header() {
               </NavLink>
             </div>
           </div>
-          {/* <NavLink onClick={changeBurger} className="navbar__link" to="/catalog">
+          <NavLink onClick={changeBurger} className="navbar__link catalog" to="/catalog">
             Каталог
-          </NavLink> */}
+          </NavLink>
           <NavLink onClick={changeBurger} className="navbar__link" to="/services">
             Сервис
           </NavLink>

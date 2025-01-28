@@ -1,4 +1,4 @@
-import React, { useReducer, useState, useEffect } from 'react';
+import React, { useReducer, useState } from 'react';
 import { Parser } from 'html-to-react';
 import './styles/App.css';
 import { BrowserRouter } from 'react-router-dom';
@@ -9,6 +9,7 @@ import { Context } from './Context/Context';
 import { reducer, formReducer, forkliftReducer, formCallbackReducer } from 'reducer/reducer';
 import Modal from './components/Modal/Modal';
 import ModalCallback from 'components/ModalCallback/ModalCallback';
+import Button from './components/UI/button/Button';
 
 function App() {
   const initialState = { isOpenRequisites: false, isOpenModal: false, isOpenModalCallback: false };
@@ -38,6 +39,18 @@ function App() {
   const [isBurger, setIsBurger] = useState(false);
   const [catalogTitle, setCatalogTitle] = useState(String(localStorage.getItem('catalogTitle')));
   const [forkliftState, forkliftDispatch] = useReducer(forkliftReducer, initialForkliftType);
+
+  const changeModal = () => {
+    if (state.isOpenModal) {
+      if (dispatch) {
+        dispatch({ type: 'resetModal', payload: { isOpenModal: false } });
+      }
+    } else {
+      if (dispatch) {
+        dispatch({ type: 'resetModal', payload: { isOpenModal: true } });
+      }
+    }
+  };
 
   const rawHTML = `
   <script type="text/javascript">
@@ -96,6 +109,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <AppRouter />
+        <Button onClick={changeModal}>Оставить заявку</Button>
         <Footer />
         {state.isOpenModal ? <Modal /> : null}
         {state.isOpenModalCallback ? <ModalCallback /> : null}

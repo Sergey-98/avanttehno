@@ -36,7 +36,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 5%;
+  bottom: 3%;
   right: 1%;
   margin: auto;
   z-index: 557;
@@ -115,7 +115,7 @@
 }
 @media(max-width: 1270px) {
   .modal_container {
-    width: 33vw;
+    width: 40vw;
   }
   .input__text {
     width: 25vw;
@@ -141,11 +141,11 @@
 }
 @media(max-width: 768px) {
   .modal_container {
-    width: 40vw;
+    width: 45vw;
     height: 50%;
   }
   .modal_close {
-    top: 9%;
+    top: 10%;
     right: 1%;
   }
   .modal__title {
@@ -174,6 +174,9 @@
   }
 }
 @media(max-width: 500px) {
+  .modal_container {
+    width: 80vw;
+  }
   .input__submit {
     width: 45vw;
     font-size: 0.9em;

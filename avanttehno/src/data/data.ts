@@ -1,7 +1,7 @@
 import electroForklift from '../assets/forklifts/JAC/TitlePictures/electricForklift.png';
 import petForklift from '../assets/forklifts/JAC/TitlePictures/petrolForklift.png';
 import disForklift from '../assets/forklifts/JAC/TitlePictures/dieselForklift.png';
-import richtrakPhotos from '../assets/forklifts/JAC/TitlePictures/richtrakForklift.png';
+// import richtrakPhotos from '../assets/forklifts/JAC/TitlePictures/richtrakForklift.png';
 
 import CPD13 from '../assets/forklifts/JAC/Electric/cpd13.png';
 import CPD15 from '../assets/forklifts/JAC/Electric/cpd15.png';
@@ -964,6 +964,23 @@ export const result = [
   {
     url: 'small_equipment',
     title: 'Малая складская техника',
-    img: richtrakPhotos,
+    img: electric_stab,
+    elems: [
+      {
+        url: 'trolleys',
+        title: 'Тележки',
+        img: trolley,
+        pages: [],
+      },
+      {
+        url: 'electric_stab',
+        title: 'Штабелеры',
+        img: electric_stab,
+        pages: [],
+      },
+    ],
   },
 ];
+
+import electric_stab from '../assets/forklifts/SmallEquipment/electric_stab.png';
+import trolley from '../assets/forklifts/SmallEquipment/trolley.png';

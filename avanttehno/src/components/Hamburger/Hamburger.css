@@ -4,9 +4,9 @@
 
 @media (max-width: 768px) {
   .b_hamburger .h_line {
-    width: 50px;
+    width: 40px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #000000;
     display: block;
     margin: 10px auto;
     transition: all 0.3s ease-in-out;
@@ -34,9 +34,11 @@
 
   .b_hamburger.is_active .line1 {
     transform: translateY(13px) rotate(45deg);
+    background-color: #cee5e3;
   }
 
   .b_hamburger.is_active .line3 {
     transform: translateY(-13px) rotate(-45deg);
+    background-color: #cee5e3;
   }
 }
