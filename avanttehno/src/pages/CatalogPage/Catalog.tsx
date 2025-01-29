@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import MainPhoto from 'components/mainComponents/mainPhoto/mainPhoto';
+// import MainPhoto from 'components/mainComponents/mainPhoto/mainPhoto';
 import classes from './Catalog.module.css';
 import CatalogMainCards from 'components/catalogComponents/CatalogMainCards/CatalogMainCards';
 

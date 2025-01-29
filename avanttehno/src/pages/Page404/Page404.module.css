@@ -41,7 +41,7 @@
   flex-direction: column;
 }
 .error_title {
-  color: red;
+  color: rgb(138, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   text-align: center;

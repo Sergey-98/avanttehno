@@ -21,7 +21,7 @@
   border: 1px solid black;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow: 0 0 20px 8px #d0d0d0;
+  box-shadow: 0 0 10px 10px #5e5050;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -30,7 +30,7 @@
 }
 .mainCatalog_wrapper:hover {
   cursor: pointer;
-  background-color: #d0d0d0;
+  background-color: #b1a7a5;
   transform: scale(1.05, 1.05);
   -webkit-transform: scale(1.05, 1.05);
   -moz-transform: scale(1.05, 1.05);

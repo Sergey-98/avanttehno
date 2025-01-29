@@ -12,7 +12,7 @@ export default function Footer() {
   const texts = [
     'Качество на долгие годы',
     'avanttehno@yandex.ru',
-    '(8452)42-00-11, 55-67-15',
+    '(8452)42-00-11, +7(927)056-64-41',
     'г.Саратов, ул.Бирюзова 22',
   ];
   return (

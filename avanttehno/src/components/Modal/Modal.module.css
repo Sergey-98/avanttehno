@@ -86,6 +86,7 @@
   -o-border-radius: 20px;
   font-size: 20px;
   color: rgba(0,0,0,0.75);
+  background-color: #ffffff;
 }
 .input__submit:hover {
   width: 25%;

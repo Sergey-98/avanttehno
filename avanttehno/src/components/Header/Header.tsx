@@ -82,11 +82,11 @@ export default function Header() {
               Каталог
             </NavLink>
             <div onMouseOver={showSubLinks} onMouseOut={hideSubLinks} className={links}>
-              <NavLink className="navbar__sublink" to="catalog/jac_forklifts">
-                JAC
-              </NavLink>
               <NavLink className="navbar__sublink" to="catalog/goodsense_forklifts">
                 GOODSENSE
+              </NavLink>
+              <NavLink className="navbar__sublink" to="catalog/jac_forklifts">
+                JAC
               </NavLink>
               <NavLink className="navbar__sublink" to="catalog/shann_forklifts">
                 SHANN
