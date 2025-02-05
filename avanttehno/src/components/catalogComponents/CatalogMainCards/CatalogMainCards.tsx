@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import classes from './CatalogMainCards.module.css';
 import { getCatalogData } from '../../../API/API';
 import { ForkliftCardType } from '../../../types/types';
 
 export default function CatalogMainCards() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }, []);
   const navigate = useNavigate();
   const data = getCatalogData();
   const forkliftData = Object.values(data);

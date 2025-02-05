@@ -7,7 +7,7 @@ import info_clock from '../../../assets/icons/info_clock.svg';
 import info_phone from '../../../assets/icons/info_phone.svg';
 import info_mail from '../../../assets/icons/info_mail.svg';
 import InfoComponent from './InfoComponent/InfoComponent';
-import GuideContact from './GuideContact/GuideContact';
+// import GuideContact from './GuideContact/GuideContact';
 
 export default function Information() {
   const { state, dispatch } = useContext(Context);
@@ -27,10 +27,10 @@ export default function Information() {
     'Контактный телефон:',
   ];
   const infoTexts = [
-    '410010, г. Саратов, ул.Бирюзова 22',
+    '410010, г. Саратов, ул.Бирюзова 27',
     'пн-пт с 9.00 до 17.00. Сб, вс выходной',
     'avanttehno@yandex.ru',
-    '(8452) 42-00-11, +7(927)056-64-41',
+    '+7(951)886-45-03, +7(937)258-50-05',
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function Information() {
             />
           );
         })}
-        <GuideContact />
+        {/* <GuideContact /> */}
       </div>
       <button className={classes.information__btn_show_requisites} onClick={changeOpenRequisites}>
         {!state.isOpenRequisites ? 'Показать реквизиты для оплаты' : 'Скрыть реквизиты для оплаты'}

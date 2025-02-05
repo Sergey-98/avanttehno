@@ -3,7 +3,7 @@ import classes from './MapBlock.module.css';
 import { YMaps, Map, Placemark, FullscreenControl } from '@pbe/react-yandex-maps';
 
 export default function MapBlock() {
-  const coordinates = [51.569315, 46.031589];
+  const coordinates = [51.568542, 46.030951];
   return (
     <section className={classes.map__container}>
       <h1 className={classes.map__title}>Схема проезда</h1>
@@ -19,8 +19,8 @@ export default function MapBlock() {
             <Placemark
               geometry={coordinates}
               properties={{
-                hintContent: 'ул.Бирюзова, 22',
-                balloonContent: 'г.Саратов, ул.Бирюзова, 22 (AvantТехно)',
+                hintContent: 'ул.Бирюзова, 27',
+                balloonContent: 'г.Саратов, ул.Бирюзова, 27 (AvantТехно)',
               }}
               modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}
             />

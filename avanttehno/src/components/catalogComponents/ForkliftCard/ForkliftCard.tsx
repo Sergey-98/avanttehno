@@ -30,7 +30,8 @@ export default function CatalogCard(props: PropsForkliftCardType) {
         props.cardValue.description?.loadCapacity ||
         props.cardValue.description?.engineType ||
         props.cardValue.description?.liftingHeight ||
-        props.cardValue.description?.wheelType ? (
+        props.cardValue.description?.wheelType ||
+        props.cardValue.description?.longType ? (
           <span>
             <b>
               <i>Характеристики:</i>
@@ -42,6 +43,9 @@ export default function CatalogCard(props: PropsForkliftCardType) {
         ) : null}
         {props.cardValue.description?.loadCapacity ? (
           <span>Грузоподъемность: {props.cardValue.description?.loadCapacity}</span>
+        ) : null}
+        {props.cardValue.description?.longType ? (
+          <span>Длина: {props.cardValue.description?.longType}</span>
         ) : null}
         {props.cardValue.description?.engineType ? (
           <span>Двигатель: {props.cardValue.description?.engineType}</span>

@@ -84,6 +84,10 @@ import SHANN70 from '../assets/forklifts/SHANN/SHANN70.png';
 import SHANN80 from '../assets/forklifts/SHANN/SHANN80.png';
 import SHANN100 from '../assets/forklifts/SHANN/SHANN100.png';
 
+import electric_stab from '../assets/forklifts/SmallEquipment/electric_stab.png';
+import trolley from '../assets/forklifts/SmallEquipment/trolley.png';
+import electric_trolley from '../assets/forklifts/SmallEquipment/electric_trolley.png';
+
 export const result = [
   {
     url: 'goodsense_forklifts',
@@ -968,19 +972,64 @@ export const result = [
     elems: [
       {
         url: 'trolleys',
-        title: 'Тележки',
+        title: 'Ручные тележки',
         img: trolley,
-        pages: [],
+        pages: [
+          {
+            title: 'Ручные тележки',
+            img: trolley,
+            description: {
+              loadCapacity: '1-3 т.',
+              liftingHeight: '',
+              longType: '1.15-2 м.',
+              model: '',
+              batteryCapacity: '',
+              engineType: '',
+              wheelType: '',
+            },
+          },
+        ],
+      },
+      {
+        url: 'electric_trolley',
+        title: 'Самоходный перевозчик палетов',
+        img: electric_trolley,
+        pages: [
+          {
+            title: 'Самоходный перевозчик палетов',
+            img: electric_trolley,
+            description: {
+              loadCapacity: '1-3 т.',
+              liftingHeight: '',
+              longType: '1.15-2 м.',
+              model: '',
+              batteryCapacity: '',
+              engineType: '',
+              wheelType: '',
+            },
+          },
+        ],
       },
       {
         url: 'electric_stab',
         title: 'Штабелеры',
         img: electric_stab,
-        pages: [],
+        pages: [
+          {
+            title: 'Штабелеры',
+            img: electric_stab,
+            description: {
+              model: '',
+              batteryCapacity: '',
+              engineType: '',
+              wheelType: '',
+              loadCapacity: '1-3 т.',
+              liftingHeight: '3-6 м.',
+              longType: '1.15-2 м.',
+            },
+          },
+        ],
       },
     ],
   },
 ];
-
-import electric_stab from '../assets/forklifts/SmallEquipment/electric_stab.png';
-import trolley from '../assets/forklifts/SmallEquipment/trolley.png';

@@ -16,7 +16,7 @@ export default function Header() {
       if (dispatch) {
         dispatch({ type: 'resetModalCallback', payload: { isOpenModalCallback: true } });
       }
-    }, 5000);
+    }, 60000);
     return () => clearTimeout(timer);
   }, [dispatch]);
   // const changeModal = () => {
@@ -83,20 +83,20 @@ export default function Header() {
             </NavLink>
             <div onMouseOver={showSubLinks} onMouseOut={hideSubLinks} className={links}>
               <NavLink className="navbar__sublink" to="catalog/goodsense_forklifts">
-                GOODSENSE
+                Вилочные погрузчики GOODSENSE
               </NavLink>
               <NavLink className="navbar__sublink" to="catalog/jac_forklifts">
-                JAC
+                Вилочные погрузчики JAC
               </NavLink>
               <NavLink className="navbar__sublink" to="catalog/shann_forklifts">
-                SHANN
+                Вилочные погрузчики SHANN
               </NavLink>
             </div>
           </div>
           <NavLink onClick={changeBurger} className="navbar__link catalog" to="/catalog">
             Каталог
           </NavLink>
-          <NavLink onClick={changeBurger} className="navbar__link" to="/services">
+          <NavLink onClick={changeBurger} className="navbar__link" to="/service">
             Сервис
           </NavLink>
           <NavLink onClick={changeBurger} className="navbar__link" to="/about">
