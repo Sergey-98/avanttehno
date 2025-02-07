@@ -2,7 +2,7 @@
   "name": "avanttehno",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://avanttehno.ru/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -33,6 +33,7 @@
     "build": "react-scripts build",
     "build:production": "react-snap",
     "test": "react-scripts test",
+    "lint": "eslint \"build/**/*.{js,jsx}\"",
     "eject": "react-scripts eject"
   },
   "reactSnap": {
@@ -40,7 +41,8 @@
     "destination": "build",
     "include": [
         "/catalog",
-        "/services",
+        "/404",
+        "/service",
         "/about",
         "/contacts",
         "/catalog/goodsense_forklifts",

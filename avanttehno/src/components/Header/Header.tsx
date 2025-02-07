@@ -47,11 +47,9 @@ export default function Header() {
     }
   };
   const showSubLinks = () => {
-    console.log(links);
     setLinks('navbar__sublinks_wrapper navbar_sublinks_show');
   };
   const hideSubLinks = () => {
-    console.log(links);
     setLinks('navbar__sublinks_wrapper navbar__sublink');
   };
   return (
@@ -68,9 +66,9 @@ export default function Header() {
       </NavLink>
       <nav className={isBurger ? 'navbar active' : 'navbar'}>
         <div className="navbar__links">
-          {/* <NavLink onClick={changeBurger} className="navbar__link" to="/">
+          <NavLink onClick={changeBurger} className="navbar__link_main" to="/">
             Главная
-          </NavLink> */}
+          </NavLink>
           <div className="navbar__link_wrapper">
             <NavLink
               onClick={changeBurger}

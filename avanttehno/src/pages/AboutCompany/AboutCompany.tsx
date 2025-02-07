@@ -7,7 +7,7 @@ import Features from '../../components/aboutComponents/Features/Features';
 
 export default function AboutCompany() {
   useEffect(() => {
-    document.title = 'Фронтальные погрузчики | Avant-Техно';
+    document.title = 'Вилочные погрузчики | Avant-Техно';
   }, []);
   return (
     <main className={classes.main__about__container}>

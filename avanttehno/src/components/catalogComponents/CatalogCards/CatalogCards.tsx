@@ -26,7 +26,7 @@ export default function CatalogCards() {
         />
         <meta
           name="description"
-          content='Каталог погрузчиков JAC - ООО"AvantTehno" - официальный дилер погрузчиков JAC.'
+          content='Каталог погрузчиков - ООО"AvantTehno" - официальный дилер погрузчиков JAC.'
         />
       </Helmet>
       <div className={classes.main__title_wrapper}>
