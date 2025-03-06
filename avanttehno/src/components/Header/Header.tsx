@@ -89,6 +89,9 @@ export default function Header() {
               <NavLink className="navbar__sublink" to="catalog/shann_forklifts">
                 Вилочные погрузчики SHANN
               </NavLink>
+              <NavLink className="navbar__sublink" to="catalog/small_equipment">
+                Малая складская техника
+              </NavLink>
             </div>
           </div>
           <NavLink onClick={changeBurger} className="navbar__link catalog" to="/catalog">
