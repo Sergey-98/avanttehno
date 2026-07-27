@@ -15,7 +15,7 @@
   border-radius: 40px;
   padding: 10px;
   border: none;
-  background: #610808;
+  background: rgb(39, 46, 54);
   -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -69,7 +69,7 @@
 }
 
 .pulse_button__rings {
-  border: 1px solid #610808;
+  border: 1px solid rgb(39, 46, 54);
   position: absolute;
   top: 0;
   left: 0;

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 35%;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
 }
 .header__icon {
@@ -12,7 +12,7 @@
 }
 
 .header__number {
-    color: #000000;
+    color: #ffffff;
 }
 
 .header__numbers__text {

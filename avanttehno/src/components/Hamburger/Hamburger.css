@@ -6,7 +6,7 @@
   .b_hamburger .h_line {
     width: 40px;
     height: 3px;
-    background-color: #000000;
+    background-color: #ffffff;
     display: block;
     margin: 10px auto;
     transition: all 0.3s ease-in-out;

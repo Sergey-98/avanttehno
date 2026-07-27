@@ -81,10 +81,17 @@ export type ForkliftState = {
 };
 
 export type ForkliftCardType = {
-  url?: string;
+  url: string;
   title?: string;
   img?: string;
-  elems?: object[];
+  elems?: ForkliftMainCardType[];
+};
+
+export type ForkliftMainCardType = {
+  url: string;
+  title?: string;
+  img?: string;
+  pages?: TypeForForkliftCard[];
 };
 
 type SpecificationsType = {
@@ -95,6 +102,18 @@ type SpecificationsType = {
   wheelType?: string;
   batteryCapacity?: string;
   longType?: string;
+  operatingWeight?: string;
+  bucketVolume?: string;
+  enginePower?: string;
+  bladeWidth?: string;
+  bladeHeight?: string;
+  loaderBucketCapacity?: string;
+  loaderExcavatorCapacity?: string;
+  typeManagment?: string;
+  rollerWeight?: string;
+  rollerDiameter?: string;
+  operatingWeight2?: string;
+  diggingDepth?: string;
 };
 
 export type TypeForForkliftCard = {

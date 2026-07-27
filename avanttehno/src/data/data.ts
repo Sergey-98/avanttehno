@@ -1,3 +1,5 @@
+// import test from '../assets/test.png';
+
 // import electroForklift from '../assets/forklifts/JAC/TitlePictures/electricForklift.png';
 import petForklift from '../assets/forklifts/JAC/TitlePictures/petrolForklift.png';
 import disForklift from '../assets/forklifts/JAC/TitlePictures/dieselForklift.png';
@@ -14,7 +16,7 @@ import disForklift from '../assets/forklifts/JAC/TitlePictures/dieselForklift.pn
 // import CPD40 from '../assets/forklifts/JAC/Electric/cpd40.png';
 // import CPD45 from '../assets/forklifts/JAC/Electric/cpd45.png';
 // import CPD50 from '../assets/forklifts/JAC/Electric/cpd50.png';
-import CPD60 from '../assets/forklifts/JAC/Electric/cpd60.png';
+// import CPD60 from '../assets/forklifts/JAC/Electric/cpd60.png';
 
 // import CPQD10 from '../assets/forklifts/JAC/Petrol/CPQD10.png';
 import CPQD15 from '../assets/forklifts/JAC/Petrol/CPQD15.png';
@@ -88,7 +90,666 @@ import electric_stab from '../assets/forklifts/SmallEquipment/electric_stab.png'
 import trolley from '../assets/forklifts/SmallEquipment/trolley.png';
 import electric_trolley from '../assets/forklifts/SmallEquipment/electric_trolley.png';
 
+import frontMainXGMA from '../assets/forklifts/XGMA/frontal/frontMainXGMA.png';
+import XG918H from '../assets/forklifts/XGMA/frontal/XG918H.png';
+import XG931N from '../assets/forklifts/XGMA/frontal/XG931N.png';
+import XG936N from '../assets/forklifts/XGMA/frontal/XG936N.png';
+import XG955N from '../assets/forklifts/XGMA/frontal/XG955N.png';
+import XG956N from '../assets/forklifts/XGMA/frontal/XG956N.png';
+import XG958EV from '../assets/forklifts/XGMA/frontal/XG958EV.png';
+import XG968N from '../assets/forklifts/XGMA/frontal/XG968N.png';
+
+import gradingDraggersMainXGMA from '../assets/forklifts/XGMA/gradingDraggers/gradingDraggersMainXGMA.png';
+import XG3165 from '../assets/forklifts/XGMA/gradingDraggers/XG3165.png';
+import XG3180N from '../assets/forklifts/XGMA/gradingDraggers/XG3180N.png';
+import XG3220 from '../assets/forklifts/XGMA/gradingDraggers/XG3220.png';
+
+import excavatorLoadersMainXGMA from '../assets/forklifts/XGMA/excavatorLoaders/excavatorLoadersMainXGMA.png';
+import XG765N from '../assets/forklifts/XGMA/excavatorLoaders/XG765N.png';
+import XG765NEW from '../assets/forklifts/XGMA/excavatorLoaders/XG765NEW.png';
+import XG7654TX from '../assets/forklifts/XGMA/excavatorLoaders/XG7654TX.png';
+import XG765H4TX from '../assets/forklifts/XGMA/excavatorLoaders/XG765H4TX.png';
+
+import rollersMainXGMA from '../assets/forklifts/XGMA/rollers/rollersMainXGMA.png';
+import XG612H from '../assets/forklifts/XGMA/rollers/XG612H.png';
+import XG614H from '../assets/forklifts/XGMA/rollers/XG614H.png';
+import XG618H from '../assets/forklifts/XGMA/rollers/XG618H.png';
+import XG620H from '../assets/forklifts/XGMA/rollers/XG620H.png';
+
+import excavatorMainXGMA from '../assets/forklifts/XGMA/excavator/excavatorMainXGMA.png';
+import XG822EL from '../assets/forklifts/XGMA/excavator/XG822EL.png';
+import XG822FL from '../assets/forklifts/XGMA/excavator/XG822FL.png';
+import XG825EL from '../assets/forklifts/XGMA/excavator/XG825EL.png';
+import XG830F from '../assets/forklifts/XGMA/excavator/XG830F.png';
+import XG836EL from '../assets/forklifts/XGMA/excavator/XG836EL.png';
+import XG836FH from '../assets/forklifts/XGMA/excavator/XG836FH.png';
+import XG836FHPRO from '../assets/forklifts/XGMA/excavator/XG836FHPRO.png';
+import XG852FH from '../assets/forklifts/XGMA/excavator/XG852FH.png';
+import XG8125WH from '../assets/forklifts/XGMA/excavator/XG8125WH.png';
+
+import miniForkloftsMainXGMA from '../assets/forklifts/XGMA/miniForklifts/miniForkloftsMainXGMA.png';
+import XG3080R from '../assets/forklifts/XGMA/miniForklifts/XG3080R.png';
+import XG3120R from '../assets/forklifts/XGMA/miniForklifts/XG3120R.png';
+
+import mainXGMA from '../assets/forklifts/XGMA/mainXGMA.png';
+
+// import lonkingMain from '../assets/forklifts/Lonking/lonkingMain.png';
+
 export const result = [
+  // {
+  //   url: 'lonking',
+  //   title: 'Строительная техника Lonking',
+  //   img: lonkingMain,
+  //   elems: [
+  //     {
+  //       url: 'ekskavator-pogruzchiki-lonking',
+  //       title: 'Экскаваторы-погрузчики Lonking',
+  //       img: test,
+  //       pages: [
+  //         {
+  //           title: 'Экскаватор-погрузчик Lonking 84C Carraro',
+  //           img: test,
+  //           description: {
+  //             model: 'Lonking 84C Carraro',
+  //           },
+  //         },
+  //         {
+  //           title: 'Экскаватор-погрузчик Lonking 83C',
+  //           img: test,
+  //           description: {
+  //             model: 'Lonking 83C',
+  //           },
+  //         },
+  //         {
+  //           title: 'Экскаватор-погрузчик Lonking 84C Carraro',
+  //           img: test,
+  //           description: {
+  //             model: 'Lonking 84C Carraro',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       url: 'mini-pogruzchiki-lonking',
+  //       title: 'Мини-погрузчики Lonking',
+  //       img: test,
+  //       pages: [
+  //         {
+  //           title: 'Мини-погрузчик Lonking CDM316V',
+  //           img: test,
+  //           description: {
+  //             model: 'CDM316V',
+  //           },
+  //         },
+  //         {
+  //           title: 'Мини-погрузчик Lonking CDM307',
+  //           img: test,
+  //           description: {
+  //             model: 'CDM307',
+  //           },
+  //         },
+  //         {
+  //           title: 'Мини-погрузчик Lonking CDM312M',
+  //           img: test,
+  //           description: {
+  //             model: 'CDM312M',
+  //           },
+  //         },
+  //         {
+  //           title: 'Мини-погрузчик Lonking CDM315T',
+  //           img: test,
+  //           description: {
+  //             model: 'CDM315T',
+  //           },
+  //         },
+  //         {
+  //           title: 'Мини-погрузчик Lonking CDM312',
+  //           img: test,
+  //           description: {
+  //             model: 'CDM312',
+  //           },
+  //         },
+  //         {
+  //           title: 'Мини-погрузчик Lonking CDM308',
+  //           img: test,
+  //           description: {
+  //             model: 'CDM308',
+  //           },
+  //         },
+  //         {
+  //           title: 'Мини-погрузчик Lonking CDM303',
+  //           img: test,
+  //           description: {
+  //             model: 'CDM303',
+  //           },
+  //         },
+  //         {
+  //           title: 'Мини-погрузчик Lonking CDM311T',
+  //           img: test,
+  //           description: {
+  //             model: 'CDM311T',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       url: 'front-pogruzchiki-lonking',
+  //       title: 'Фронтальные погрузчики Lonking',
+  //       img: test,
+  //       pages: [
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking CDM908A',
+  //           img: '',
+  //           description: {
+  //             model: 'CDM908A',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking CDM932N',
+  //           img: '',
+  //           description: {
+  //             model: 'CDM932N',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking CDM936N',
+  //           img: '',
+  //           description: {
+  //             model: 'CDM936N',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking LG833B(N)',
+  //           img: '',
+  //           description: {
+  //             model: 'LG833B(N)',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking CDM835',
+  //           img: '',
+  //           description: {
+  //             model: 'CDM835',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking CDM853N(GN)',
+  //           img: '',
+  //           description: {
+  //             model: 'CDM853N(GN)',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking CDM853G',
+  //           img: '',
+  //           description: {
+  //             model: 'CDM853G',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking CDM856',
+  //           img: '',
+  //           description: {
+  //             model: 'CDM856',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking LG855B',
+  //           img: '',
+  //           description: {
+  //             model: 'LG855B',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking ZL50NC',
+  //           img: '',
+  //           description: {
+  //             model: 'ZL50NC',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking ZL50NCS',
+  //           img: '',
+  //           description: {
+  //             model: 'ZL50NCS',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking CDM860',
+  //           img: '',
+  //           description: {
+  //             model: 'CDM860',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking LG863N',
+  //           img: '',
+  //           description: {
+  //             model: 'LG863N',
+  //           },
+  //         },
+  //         {
+  //           title: 'Фронтальный погрузчик Lonking LG876N',
+  //           img: '',
+  //           description: {
+  //             model: 'LG876N',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       url: 'teleskopicheskiye-pogruzchiki-lonking',
+  //       title: 'Телескопические погрузчики Lonking',
+  //       img: test,
+  //       pages: [
+  //         {
+  //           title: 'Телескописечкий погрузчик Lonking LGT4207',
+  //           img: '',
+  //           description: {
+  //             model: 'LGT4207',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       url: 'excavator-lonking',
+  //       title: 'Экскаваторы Lonking',
+  //       img: test,
+  //       pages: [
+  //         {
+  //           title: '',
+  //           img: '',
+  //           description: {
+  //             model: '',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       url: 'autopogruzchiki-lonking',
+  //       title: 'Вилочные погрузчики Lonking',
+  //       img: test,
+  //       pages: [
+  //         {
+  //           title: '',
+  //           img: '',
+  //           description: {
+  //             model: '',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       url: 'katki-lonking',
+  //       title: 'Дорожные катки Lonking',
+  //       img: test,
+  //       pages: [
+  //         {
+  //           title: '',
+  //           img: '',
+  //           description: {
+  //             model: '',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  {
+    url: 'XGMA',
+    title: 'Строительная техника XGMA',
+    img: mainXGMA,
+    elems: [
+      {
+        url: 'frontalXGMA',
+        title: 'Фронтальные погрузчики',
+        img: frontMainXGMA,
+        pages: [
+          {
+            title: 'Фронтальный погрузчик XGMA XG918H',
+            img: XG918H,
+            description: {
+              model: 'XG918H',
+              operatingWeight: '6110',
+              loadCapacity: '1800',
+              bucketVolume: '1.0',
+              enginePower: '60(75.6)',
+            },
+          },
+          {
+            title: 'Фронтальный погрузчик XGMA XG931N',
+            img: XG931N,
+            description: {
+              model: 'XG931N',
+              operatingWeight: '10400',
+              loadCapacity: '3100',
+              bucketVolume: '2.0',
+              enginePower: '92(125)',
+            },
+          },
+          {
+            title: 'Фронтальный погрузчик XGMA XG936N',
+            img: XG936N,
+            description: {
+              model: 'XG936N',
+              operatingWeight: '10800',
+              loadCapacity: '3200',
+              bucketVolume: '1.8',
+              enginePower: '92(125)',
+            },
+          },
+          {
+            title: 'Фронтальный погрузчик XGMA XG955N',
+            img: XG955N,
+            description: {
+              model: 'XG955N',
+              operatingWeight: '17200',
+              loadCapacity: '5200',
+              bucketVolume: '3.1',
+              enginePower: '92(125)',
+            },
+          },
+          {
+            title: 'Фронтальный погрузчик XGMA XG956N',
+            img: XG956N,
+            description: {
+              model: 'XG956N',
+              operatingWeight: '17600',
+              loadCapacity: '5700',
+              bucketVolume: '3.4',
+              enginePower: '162(220)',
+            },
+          },
+          {
+            title: 'Фронтальный погрузчик XGMA XG958EV',
+            img: XG958EV,
+            description: {
+              model: 'XG958EV',
+              operatingWeight: '18500',
+              loadCapacity: '5500',
+              bucketVolume: '3.0',
+              enginePower: '180(150)',
+            },
+          },
+          {
+            title: 'Фронтальный погрузчик XGMA XG968N',
+            img: XG968N,
+            description: {
+              model: 'XG968N',
+              operatingWeight: '22100',
+              loadCapacity: '7000',
+              bucketVolume: '4.5',
+              enginePower: '191(260)',
+            },
+          },
+        ],
+      },
+      {
+        url: 'gradingDraggersXGMA',
+        title: 'Автогрейдеры',
+        img: gradingDraggersMainXGMA,
+        pages: [
+          {
+            title: 'Автогрейдер XGMA XG3165',
+            img: XG3165,
+            description: {
+              model: 'XG3165',
+              operatingWeight: '16.5',
+              enginePower: '132(180)',
+              bladeWidth: '3660',
+              bladeHeight: '610',
+            },
+          },
+          {
+            title: 'Автогрейдер XGMA XG3180N',
+            img: XG3180N,
+            description: {
+              model: 'XG3180N',
+              operatingWeight: '15.5',
+              enginePower: '132(180)',
+              bladeWidth: '3965',
+              bladeHeight: '610',
+            },
+          },
+          {
+            title: 'Автогрейдер XGMA XG3220',
+            img: XG3220,
+            description: {
+              model: 'XG3220',
+              operatingWeight: '20.05',
+              enginePower: '179(240)',
+              bladeWidth: '4270',
+              bladeHeight: '610',
+            },
+          },
+        ],
+      },
+      {
+        url: 'excavatorLoadersXGMA',
+        title: 'Экскаваторы-погрузчики',
+        img: excavatorLoadersMainXGMA,
+        pages: [
+          {
+            title: 'Экскаватор-погрузчик XGMA XG765N',
+            img: XG765N,
+            description: {
+              model: 'XG765N',
+              operatingWeight: '9120',
+              loadCapacity: '3000',
+              loaderBucketCapacity: '1,0',
+              loaderExcavatorCapacity: '0,3',
+            },
+          },
+          {
+            title: 'Экскаватор-погрузчик XGMA XG765N (Новая версия)',
+            img: XG765NEW,
+            description: {
+              model: 'XG765N (Новая версия)',
+              operatingWeight: '9120',
+              loadCapacity: '3000',
+              loaderBucketCapacity: '1,0',
+              loaderExcavatorCapacity: '0,3',
+            },
+          },
+          {
+            title: 'Экскаватор-погрузчик XGMA XG765 4TX',
+            img: XG7654TX,
+            description: {
+              model: 'XG765 4TX',
+              enginePower: '74,5(101)',
+              typeManagment: 'Джойстик',
+              loaderBucketCapacity: '1,2',
+              loaderExcavatorCapacity: '0,3',
+            },
+          },
+          {
+            title: 'Экскаватор-погрузчик XGMA XG765H 4TX',
+            img: XG765H4TX,
+            description: {
+              model: 'XG765H 4TX',
+              enginePower: '74,5(101)',
+              typeManagment: 'Джойстик',
+              loaderBucketCapacity: '1,0',
+              loaderExcavatorCapacity: '0,3',
+            },
+          },
+        ],
+      },
+      {
+        url: 'rollersXGMA',
+        title: 'Катки',
+        img: rollersMainXGMA,
+        pages: [
+          {
+            title: 'Грунтовый каток XGMA XG612H',
+            img: XG612H,
+            description: {
+              model: 'XG612H',
+              operatingWeight: '13300',
+              rollerWeight: '6500',
+              rollerDiameter: '1550',
+            },
+          },
+          {
+            title: 'Дорожный каток XGMA XG614H',
+            img: XG614H,
+            description: {
+              model: 'XG614H',
+              operatingWeight: '15200',
+              rollerWeight: '8200',
+              rollerDiameter: '1550',
+            },
+          },
+          {
+            title: 'Дорожный каток XGMA XG618H',
+            img: XG618H,
+            description: {
+              model: 'XG618H',
+              operatingWeight: '19300',
+              rollerWeight: '10350',
+              rollerDiameter: '1550',
+            },
+          },
+          {
+            title: 'Дорожный каток XGMA XG620H',
+            img: XG620H,
+            description: {
+              model: 'XG620H',
+              operatingWeight: '21200',
+              rollerWeight: '11200',
+              rollerDiameter: '1550',
+            },
+          },
+        ],
+      },
+      {
+        url: 'excavatorXGMA',
+        title: 'Экскаваторы',
+        img: excavatorMainXGMA,
+        pages: [
+          {
+            title: 'Гусеничный экскаватор XGMA XG822EL (Габарит)',
+            img: XG822EL,
+            description: {
+              model: 'XG822EL',
+              operatingWeight2: '21500',
+              bucketVolume: '1.0',
+              diggingDepth: '6640',
+            },
+          },
+          {
+            title: 'Гусеничный экскаватор XGMA XG822FL',
+            img: XG822FL,
+            description: {
+              model: 'XG822FL',
+              operatingWeight2: '21500',
+              bucketVolume: '1.1',
+              diggingDepth: '6640',
+            },
+          },
+          {
+            title: 'Гусеничный экскаватор XGMA XG825EL',
+            img: XG825EL,
+            description: {
+              model: 'XG825EL',
+              operatingWeight2: '24000',
+              bucketVolume: '1.2',
+              diggingDepth: '6875',
+            },
+          },
+          {
+            title: 'Гусеничный экскаватор XGMA XG830F',
+            img: XG830F,
+            description: {
+              model: 'XG830F',
+              operatingWeight2: '33000',
+              bucketVolume: '1.4',
+              diggingDepth: '7370',
+            },
+          },
+          {
+            title: 'Гусеничный экскаватор XGMA XG836EL',
+            img: XG836EL,
+            description: {
+              model: 'XG836EL',
+              operatingWeight2: '35000',
+              bucketVolume: '1.7',
+              diggingDepth: '6890',
+            },
+          },
+          {
+            title: 'Гусеничный экскаватор XGMA XG836FH',
+            img: XG836FH,
+            description: {
+              model: 'XG836FH',
+              operatingWeight2: '35000',
+              bucketVolume: '1.7',
+              diggingDepth: '6980',
+            },
+          },
+          {
+            title: 'Гусеничный экскаватор XGMA XG836FH PRO',
+            img: XG836FHPRO,
+            description: {
+              model: 'XG836FH PRO',
+              operatingWeight2: '35000',
+              bucketVolume: '1.7',
+              diggingDepth: '6890',
+            },
+          },
+          {
+            title: 'Гусеничный экскаватор XGMA XG852FH',
+            img: XG852FH,
+            description: {
+              model: 'XG852FH',
+              operatingWeight2: '51500',
+              bucketVolume: '2.8',
+              diggingDepth: '6260',
+            },
+          },
+          {
+            title: 'Гусеничный экскаватор XGMA XG8125WH',
+            img: XG8125WH,
+            description: {
+              model: 'XG8125WH',
+              operatingWeight2: '9000',
+              bucketVolume: '0.45',
+              diggingDepth: '3800',
+            },
+          },
+        ],
+      },
+      {
+        url: 'miniForkloftsXGMA',
+        title: 'Мини-погрузчики',
+        img: miniForkloftsMainXGMA,
+        pages: [
+          {
+            title: 'Мини-погрузчик XGMA XG3080R',
+            img: XG3080R,
+            description: {
+              model: 'XG3080R',
+              operatingWeight: '3100',
+              loadCapacity: '800',
+              bucketVolume: '0.45',
+              liftingHeight: '2400 мм',
+            },
+          },
+          {
+            title: 'Мини-погрузчик XGMA XG3120R',
+            img: XG3120R,
+            description: {
+              model: 'XG3120R',
+              operatingWeight: '3930',
+              loadCapacity: '1200',
+              bucketVolume: '0,54',
+              liftingHeight: '2390 мм',
+            },
+          },
+        ],
+      },
+    ],
+  },
   {
     url: 'goodsense_forklifts',
     title: 'Вилочные погрузчики Goodsense',
@@ -389,7 +1050,7 @@ export const result = [
   {
     url: 'jac_forklifts',
     title: 'Вилочные погрузчики JAC',
-    img: CPD60,
+    img: disForklift,
     elems: [
       {
         url: 'dieselForkliftJAC',

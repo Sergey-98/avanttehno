@@ -80,6 +80,9 @@ export default function Header() {
               Каталог
             </NavLink>
             <div onMouseOver={showSubLinks} onMouseOut={hideSubLinks} className={links}>
+              <NavLink className="navbar__sublink" to="catalog/XGMA">
+                Строительная техника XGMA
+              </NavLink>
               <NavLink className="navbar__sublink" to="catalog/goodsense_forklifts">
                 Вилочные погрузчики GOODSENSE
               </NavLink>

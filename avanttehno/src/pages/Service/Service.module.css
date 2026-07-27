@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #ffffff;
 }
 .service__company_textwrapper {
   display: flex;
@@ -26,7 +27,7 @@
   padding: 1% 0px;
 }
 .service__company_textwrapper {
-  border: 3px solid #000000;
+  border: 3px solid #ffffff;
   background: inherit;
   font-size: 30px;
   border-radius: 15px;
@@ -41,7 +42,7 @@
 }
 .service__company_title .main__title {
   position: relative;
-  color: #000000;
+  color: #ffffff;
   font-family: Tahoma, sans-serif;
   font-size: 35px;
   font-weight: weight;
@@ -62,7 +63,7 @@
   height: 20px;
   top: -20px;
   left: -20px;
-  border: 4px solid #000000;
+  border: 4px solid #ffffff;
   box-sizing: border-box;
 } */
 .service__company_text {

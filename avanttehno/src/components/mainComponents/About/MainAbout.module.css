@@ -50,7 +50,7 @@
 }
 .about__title .main__title {
   position: relative;
-  color: #000000;
+  color: #ffffff;
   font-family: Stolzl;
   font-size: 50px;
   font-weight: normal;
@@ -68,7 +68,7 @@
   height: 28px;
   top: -28px;
   left: -28px;
-  border: 4px solid #000000;
+  border: 4px solid #ffffff;
   box-sizing: border-box;
 }
 .about__subtitle {

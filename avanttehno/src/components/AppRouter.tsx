@@ -14,16 +14,16 @@ export default function AppRouter() {
       {routes.map((route) => (
         <Route
           path={route.path}
-          // element={route.path == '/' ? <Navigate to="/catalog/" /> : <route.component />}
-          element={
-            route.path == '/' ? (
-              <Navigate to="/catalog/" />
-            ) : route.path == '/*' ? (
-              <Navigate to="/" />
-            ) : (
-              <route.component />
-            )
-          }
+          element={<route.component />}
+          // element={
+          //   route.path == '/' ? (
+          //     <Navigate to="/catalog/" />
+          //   ) : route.path == '/*' ? (
+          //     <Navigate to="/" />
+          //   ) : (
+          //     <route.component />
+          //   )
+          // }
           key={route.path}
         />
       ))}

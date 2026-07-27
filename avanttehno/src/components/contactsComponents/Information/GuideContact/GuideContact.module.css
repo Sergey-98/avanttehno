@@ -5,13 +5,13 @@
   gap: 3px;
 }
 .person_title {
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
   font-size: 19px;
   word-wrap: nowrap;
 }
 .guide__persons_title {
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
   font-size: 22px;
 }
@@ -22,7 +22,7 @@
   gap: 10px;
 }
 .person_text_phone {
-  color: #000000;
+  color: #ffffff;
 }
 
 @media (max-width: 1027px) {

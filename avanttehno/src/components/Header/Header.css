@@ -4,9 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid #ffffff;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  /* background: linear-gradient(180deg, #000000 39.76%, #010130 100%); */
+  /* background: linear-gradient(180deg, #ffffff 39.76%, #010130 100%); */
   font-size: 1.3em;
   z-index: 500;
 }
@@ -26,7 +26,7 @@
 .navbar__link {
   margin: auto 0;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 .navbar__link_wrapper {
   margin: auto 0;
@@ -91,8 +91,8 @@
     display: none;
     z-index: 100;
     position: absolute;
-    background-color: rgba(92, 72, 72, 0.95);
-    /* background: linear-gradient(180deg, #000000 39.76%, #010130 100%); */
+    background-color: rgb(39, 46, 54, 0.9);
+    /* background: linear-gradient(180deg, #ffffff 39.76%, #010130 100%); */
     right: -100%;
   }
   .navbar.active {

@@ -4,6 +4,7 @@
   display: flex;
   gap: 10%;
   background: inherit;
+  color: white;
 }
 @media(max-width: 900px) {
   .contacts__container {

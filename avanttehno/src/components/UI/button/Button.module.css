@@ -5,11 +5,11 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  background: #000000;
-  background: -webkit-linear-gradient(bottom, #000000, #5e5050);
-  background: -moz-linear-gradient(bottom, #000000, #5e5050);
-  background: linear-gradient(to top, #000000, #5e5050);
-  border: 5px solid #5e5050;
+  background: rgb(39, 46, 54);
+  /* background: -webkit-linear-gradient(bottom, #ffffff, #291b1b);
+  background: -moz-linear-gradient(bottom, #ffffff, #291b1b);
+  background: linear-gradient(to top, #ffffff, #291b1b); */
+  border: 3px solid #b1a7a5;
   cursor: pointer;
   border-radius: 15px;
 }
