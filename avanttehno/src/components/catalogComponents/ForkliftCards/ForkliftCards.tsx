@@ -1,18 +1,15 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import classes from './ForkliftCards.module.css';
 import { getCatalogData } from '../../../API/API';
 import ForkliftCard from '../ForkliftCard/ForkliftCard';
-import { Context } from '../../../Context/Context';
-import { TypeForForkliftCard } from '../../../types/types';
-import { useNavigate, useParams } from 'react-router';
+import { TypeForForkliftCard, ForkliftCardType } from '../../../types/types';
+import { useParams } from 'react-router';
 
 export default function ForkliftCards() {
-  const { forkliftState } = useContext(Context);
-  const data = getCatalogData();
+  const data: ForkliftCardType[] = getCatalogData();
   // const type = forkliftState.type;
   // const s = data[type as keyof typeof data];
   // const forkliftData = Object.values(s['values' as keyof typeof s]) as TypeForForkliftCard[];
-  const navigate = useNavigate();
   const { id, name } = useParams();
   const param = id;
   const n = name;

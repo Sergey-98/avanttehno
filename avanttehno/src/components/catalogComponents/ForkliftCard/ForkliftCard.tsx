@@ -30,7 +30,8 @@ export default function CatalogCard(props: PropsForkliftCardType) {
         props.cardValue.description?.loadCapacity ||
         props.cardValue.description?.engineType ||
         props.cardValue.description?.liftingHeight ||
-        props.cardValue.description?.wheelType ? (
+        props.cardValue.description?.wheelType ||
+        props.cardValue.description?.longType ? (
           <span>
             <b>
               <i>Характеристики:</i>
@@ -41,7 +42,10 @@ export default function CatalogCard(props: PropsForkliftCardType) {
           <span>Модель: {props.cardValue.description?.model}</span>
         ) : null}
         {props.cardValue.description?.loadCapacity ? (
-          <span>Грузоподъемность: {props.cardValue.description?.loadCapacity}</span>
+          <span>Грузоподъемность, кг: {props.cardValue.description?.loadCapacity}</span>
+        ) : null}
+        {props.cardValue.description?.longType ? (
+          <span>Длина: {props.cardValue.description?.longType}</span>
         ) : null}
         {props.cardValue.description?.engineType ? (
           <span>Двигатель: {props.cardValue.description?.engineType}</span>
@@ -54,6 +58,46 @@ export default function CatalogCard(props: PropsForkliftCardType) {
         ) : null}
         {props.cardValue.description?.wheelType ? (
           <span>Тип шин: {props.cardValue.description?.wheelType}</span>
+        ) : null}
+        {props.cardValue.description?.operatingWeight ? (
+          <span>Эксплуатационная масса, кг: {props.cardValue.description?.operatingWeight}</span>
+        ) : null}
+        {props.cardValue.description?.bucketVolume ? (
+          <span>Объем ковша, м3: {props.cardValue.description?.bucketVolume}</span>
+        ) : null}
+        {props.cardValue.description?.enginePower ? (
+          <span>Мощность двигателя, кВт(л.с.): {props.cardValue.description?.enginePower}</span>
+        ) : null}
+        {props.cardValue.description?.bladeWidth ? (
+          <span>Ширина отвала: {props.cardValue.description?.bladeWidth}</span>
+        ) : null}
+        {props.cardValue.description?.bladeHeight ? (
+          <span>Высота отвала: {props.cardValue.description?.bladeHeight}</span>
+        ) : null}
+        {props.cardValue.description?.loaderBucketCapacity ? (
+          <span>
+            Объем ковша погрузчика, м3: {props.cardValue.description?.loaderBucketCapacity}
+          </span>
+        ) : null}
+        {props.cardValue.description?.loaderExcavatorCapacity ? (
+          <span>
+            Объем экскаваторного ковша, м3: {props.cardValue.description?.loaderExcavatorCapacity}
+          </span>
+        ) : null}
+        {props.cardValue.description?.typeManagment ? (
+          <span>Тип управления: {props.cardValue.description?.typeManagment}</span>
+        ) : null}
+        {props.cardValue.description?.rollerWeight ? (
+          <span>Масса вальца, кг: {props.cardValue.description?.rollerWeight}</span>
+        ) : null}
+        {props.cardValue.description?.rollerDiameter ? (
+          <span>Диметр вальца, мм: {props.cardValue.description?.rollerDiameter}</span>
+        ) : null}
+        {props.cardValue.description?.operatingWeight2 ? (
+          <span>Эксплуатационный вес, кг: {props.cardValue.description?.operatingWeight2}</span>
+        ) : null}
+        {props.cardValue.description?.diggingDepth ? (
+          <span>Глубина копания, мм: {props.cardValue.description?.diggingDepth}</span>
         ) : null}
       </p>
       <Button onClick={changeModal}>Заказать</Button>

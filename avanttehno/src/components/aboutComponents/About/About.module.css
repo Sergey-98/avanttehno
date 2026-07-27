@@ -4,7 +4,7 @@
 }
 .about__company_wrapper {
   width: 80vw;
-  border: 3px solid #000000;
+  border: 3px solid #ffffff;
   background: inherit;
   font-size: 30px;
   border-radius: 15px;
@@ -18,7 +18,7 @@
 }
 .about__company_title .main__title {
   position: relative;
-  color: #000000;
+  color: #ffffff;
   font-family: Tahoma, sans-serif;
   font-size: 40px;
   font-weight: normal;
@@ -34,7 +34,7 @@
   height: 20px;
   top: -20px;
   left: -20px;
-  border: 4px solid #000000;
+  border: 4px solid #ffffff;
   box-sizing: border-box;
 } */
 .about__company_text {

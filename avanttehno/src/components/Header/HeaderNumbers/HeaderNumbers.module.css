@@ -3,7 +3,23 @@
     flex-direction: column;
     align-items: center;
     width: 35%;
-    color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+}
+.header__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.header__number {
+    color: #ffffff;
+}
+
+.header__numbers__text {
+    display: flex;
+    gap: 10px;
+    vertical-align: baseline;
+
 }
 
 .header__numbers__textlink:hover {
@@ -13,13 +29,17 @@
 
 @media(max-width: 1000px) {
     .header__numbers {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
 @media(max-width: 768px) {
     .header__numbers {
         width: 75%;
+        color: #cee5e3;
+    }
+    .header__number {
+        color: #cee5e3;
     }
 }
 /* 

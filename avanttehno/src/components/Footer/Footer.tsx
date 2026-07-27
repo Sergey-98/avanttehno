@@ -12,8 +12,8 @@ export default function Footer() {
   const texts = [
     'Качество на долгие годы',
     'avanttehno@yandex.ru',
-    '(8452)42-00-11, 55-67-15',
-    'г.Саратов, ул.Бирюзова 22',
+    '+7(951)886-45-03, +7(937)258-50-05',
+    'г.Саратов, ул.Бирюзова 27',
   ];
   return (
     <footer className={styles.footer__container}>

@@ -1,17 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import classes from './ForkliftsCatalog.module.css';
 import { getCatalogData } from 'API/API';
-import { useNavigate, useParams } from 'react-router';
+import { useParams } from 'react-router';
+import { ForkliftCardType } from '../../../types/types';
 // import { Context } from '../../../Context/Context';
 import ForkliftCards from '../ForkliftCards/ForkliftCards';
 
 export default function ForkliftsCatalog() {
   // const { catalogTitle } = useContext(Context);
-  const navigate = useNavigate();
   const { id, name } = useParams();
   const param = id;
-  const data = getCatalogData();
+  const data: ForkliftCardType[] = getCatalogData();
   const catalogTitle = data.filter((elem) => elem.url == param)[0].title;
   let title;
   if (name) {

@@ -151,7 +151,9 @@ export default function Modal() {
             type="text"
             onChange={inputText}
           />
-          <span className={formState.errorName ? 'error-text' : 'none'}>{formState.errorName}</span>
+          <span className={formState.errorName ? styles.error_text : 'none'}>
+            {formState.errorName}
+          </span>
         </label>
         <label className={styles.label_form}>
           <input
@@ -164,7 +166,7 @@ export default function Modal() {
             onChange={inputNumber}
             onBlur={checkNumber}
           />
-          <span className={formState.errorNumber ? 'error-text' : 'none'}>
+          <span className={formState.errorNumber ? styles.error_text : 'none'}>
             {formState.errorNumber}
           </span>
         </label>
@@ -179,7 +181,7 @@ export default function Modal() {
             onChange={inputEmail}
             onBlur={checkEmail}
           />
-          <span className={formState.errorEmail ? 'error-text' : 'none'}>
+          <span className={formState.errorEmail ? styles.error_text : 'none'}>
             {formState.errorEmail}
           </span>
         </label>
@@ -193,7 +195,7 @@ export default function Modal() {
             type="text"
             onChange={inputMessage}
           />
-          <span className={formState.errorMessage ? 'error-text' : 'none'}>
+          <span className={formState.errorMessage ? styles.error_text : 'none'}>
             {formState.errorMessage}
           </span>
         </label>

@@ -1,5 +1,5 @@
 .contact__container:not(.contact__container:last-child) {
-  border-right: 1px solid #000000;
+  border-right: 1px solid #ffffff;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -22,12 +22,12 @@
   height: 50px;
 }
 .contact__title {
-  color: #000000;
+  color: #ffffff;
   font-weight: 600;
 }
 .contact__text {
   width: 75%;
-  color: #000000;
+  color: #ffffff;
   font-weight: 400;
 }
 @media (max-width: 1300px) { 
@@ -61,7 +61,7 @@
 @media (max-width: 485px) { 
   .contact__container:not(.contact__container:first-child) { 
     padding-top: 1em;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #ffffff;
   }
 }
 @media (max-width: 400px) { 

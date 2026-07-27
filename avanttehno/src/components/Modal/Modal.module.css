@@ -8,17 +8,20 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 575;
 }
+.error_text {
+  color: #cee5e3;
+}
 .modal_container__form {
   width: 60%;
-  height: 60%;
+  height: 80%;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  background-color: #b69696;
-  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +34,7 @@
   -o-border-radius: 10px;
 }
 .modal_title, .modal_subtitle {
-  color: #000000;
+  color: #cee5e3;
   width: 50%;
   text-align: center;
   z-index: 555;
@@ -43,8 +46,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 45%;
-  left: 45%;
+  bottom: 65%;
+  left: 50%;
   margin: auto;
   z-index: 557;
 }
@@ -53,12 +56,13 @@
   cursor: pointer;
 }
 .input__text {
-  width: 28vw;
+  width: 40vw;
   padding: 11px;
   border: 1px solid #eee;
   font-size: 0.9em;
   border-radius: 10px;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  margin: 0 auto;
 }
 .input__text:focus {
   background-color: #50508a;
@@ -74,22 +78,24 @@
   align-self: center;
   width: 150px;
   height: 40px;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   font-size: 20px;
-  color: #4682B4;
+  color: rgba(0,0,0,0.75);
+  background-color: #ffffff;
 }
 .input__submit:hover {
   width: 25%;
   font-size: 25px;
-  background: #000000;
+  background-color: #50508a;
+  color: #cee5e3;
 }
 .label_form {
-  width: 28vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -98,6 +104,7 @@
 @media(max-width: 768px) {
   .modal_container__form {
     width: 70%;
+    height: 90%;
   }
   .input__text {
     width: 50vw;
@@ -110,17 +117,18 @@
     width: 50vw;
   }
   .modal_close {
+    bottom: 75%;
     left: 55%;
   }
 }
 @media(max-width: 500px) {
   .modal_container__form {
     width: 90%;
-    height: 55%;
+    height: 70%;
   }
   .modal_close {
-    left: 60%;
-    bottom: 50%;
+    left: 80%;
+    bottom: 55%;
   }
   .modal_title {
     width: 80%;
@@ -129,9 +137,6 @@
   .modal_subtitle {
     width: 80%;
     font-size: 16px;
-  }
-  .modal_container__form {
-    height: 60%;
   }
   .input__text {
     width: 70vw;

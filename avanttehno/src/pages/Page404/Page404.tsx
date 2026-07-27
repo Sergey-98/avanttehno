@@ -6,7 +6,7 @@ import errorImg from '../../assets/error-image.png';
 
 export default function Error() {
   useEffect(() => {
-    document.title = '404 — Страница не найдена';
+    document.title = 'Страница не найдена';
   }, []);
   return (
     <main className={classes.error__contsiner}>

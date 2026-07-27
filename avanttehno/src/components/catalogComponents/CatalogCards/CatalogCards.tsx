@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import classes from './CatalogCards.module.css';
 import { getCatalogData } from '../../../API/API';
-import CatalogCard from '../CatalogCard/CatalogCard';
-import { Context } from '../../../Context/Context';
+// import CatalogCard from '../CatalogCard/CatalogCard';
+// import { Context } from '../../../Context/Context';
 import { ForkliftCardType } from '../../../types/types';
 import { Helmet } from 'react-helmet';
 
@@ -16,7 +16,7 @@ export default function CatalogCards() {
 
   useEffect(() => {
     document.title = `${data.filter((elem) => elem.url == param)[0].title} | Avant-Техно`;
-  }, []);
+  });
   return (
     <main className={classes.main__catalog_wrapper}>
       <Helmet>
@@ -26,7 +26,7 @@ export default function CatalogCards() {
         />
         <meta
           name="description"
-          content='Каталог погрузчиков JAC - ООО"AvantTehno" - официальный дилер погрузчиков JAC.'
+          content='Каталог погрузчиков - ООО"AvantTehno" - официальный дилер погрузчиков JAC.'
         />
       </Helmet>
       <div className={classes.main__title_wrapper}>
@@ -40,9 +40,16 @@ export default function CatalogCards() {
             <div
               key={value.title}
               className={classes.mainCatalog_wrapper}
-              onClick={() =>
-                navigate(`/catalog/${data.filter((elem) => elem.url == param)[0].url}/${value.url}`)
-              }
+              onClick={() => {
+                navigate(
+                  `/catalog/${data.filter((elem) => elem.url == param)[0].url}/${value.url}`
+                );
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: 'smooth',
+                });
+              }}
             >
               <h4 className={classes.mainCatalog_title}>{value.title}</h4>
               <img src={value.img} alt={value.title} className={classes.img} />

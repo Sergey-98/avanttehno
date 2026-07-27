@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import Button from '../UI/button/Button';
+// import Button from '../UI/button/Button';
 import logo from '../../assets/logo.svg';
 import { Context } from '../../Context/Context';
 import Hamburger from '../../components/Hamburger/Hamburger';
@@ -16,20 +16,20 @@ export default function Header() {
       if (dispatch) {
         dispatch({ type: 'resetModalCallback', payload: { isOpenModalCallback: true } });
       }
-    }, 5000);
+    }, 60000);
     return () => clearTimeout(timer);
   }, [dispatch]);
-  const changeModal = () => {
-    if (state.isOpenModal) {
-      if (dispatch) {
-        dispatch({ type: 'resetModal', payload: { isOpenModal: false } });
-      }
-    } else {
-      if (dispatch) {
-        dispatch({ type: 'resetModal', payload: { isOpenModal: true } });
-      }
-    }
-  };
+  // const changeModal = () => {
+  //   if (state.isOpenModal) {
+  //     if (dispatch) {
+  //       dispatch({ type: 'resetModal', payload: { isOpenModal: false } });
+  //     }
+  //   } else {
+  //     if (dispatch) {
+  //       dispatch({ type: 'resetModal', payload: { isOpenModal: true } });
+  //     }
+  //   }
+  // };
   const changeModalCallback = () => {
     if (state.isOpenModalCallback) {
       if (dispatch) {
@@ -47,11 +47,9 @@ export default function Header() {
     }
   };
   const showSubLinks = () => {
-    console.log(links);
     setLinks('navbar__sublinks_wrapper navbar_sublinks_show');
   };
   const hideSubLinks = () => {
-    console.log(links);
     setLinks('navbar__sublinks_wrapper navbar__sublink');
   };
   return (
@@ -68,9 +66,9 @@ export default function Header() {
       </NavLink>
       <nav className={isBurger ? 'navbar active' : 'navbar'}>
         <div className="navbar__links">
-          {/* <NavLink onClick={changeBurger} className="navbar__link" to="/">
+          <NavLink onClick={changeBurger} className="navbar__link_main" to="/">
             Главная
-          </NavLink> */}
+          </NavLink>
           <div className="navbar__link_wrapper">
             <NavLink
               onClick={changeBurger}
@@ -82,21 +80,27 @@ export default function Header() {
               Каталог
             </NavLink>
             <div onMouseOver={showSubLinks} onMouseOut={hideSubLinks} className={links}>
-              <NavLink className="navbar__sublink" to="catalog/jac_forklifts">
-                JAC
+              <NavLink className="navbar__sublink" to="catalog/XGMA">
+                Строительная техника XGMA
               </NavLink>
               <NavLink className="navbar__sublink" to="catalog/goodsense_forklifts">
-                GOODSENSE
+                Вилочные погрузчики GOODSENSE
+              </NavLink>
+              <NavLink className="navbar__sublink" to="catalog/jac_forklifts">
+                Вилочные погрузчики JAC
               </NavLink>
               <NavLink className="navbar__sublink" to="catalog/shann_forklifts">
-                SHANN
+                Вилочные погрузчики SHANN
+              </NavLink>
+              <NavLink className="navbar__sublink" to="catalog/small_equipment">
+                Малая складская техника
               </NavLink>
             </div>
           </div>
-          {/* <NavLink onClick={changeBurger} className="navbar__link" to="/catalog">
+          <NavLink onClick={changeBurger} className="navbar__link catalog" to="/catalog">
             Каталог
-          </NavLink> */}
-          <NavLink onClick={changeBurger} className="navbar__link" to="/services">
+          </NavLink>
+          <NavLink onClick={changeBurger} className="navbar__link" to="/service">
             Сервис
           </NavLink>
           <NavLink onClick={changeBurger} className="navbar__link" to="/about">
